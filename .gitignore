@@ -4,8 +4,6 @@
 .Ruserdata
 .DS_Store
 Thumbs.db
-
 *.Rmd
 *.Rmarkdown
-
 content/
