@@ -1,0 +1,6 @@
+base
+dplyr
+future
+future.apply
+furrr
+forecast
