@@ -1,0 +1,17 @@
+# Font style metadata
+name = "my_font_set"
+
+# Optional Google font URL
+google_fonts = "family=Nanum+Gothic:wght@400;700&family=Noto+Sans+KR:wght@500"
+
+# Font families
+heading_font = "Noto Sans KR"
+body_font = "Noto Sans KR"
+nav_font = "Noto Sans KR"
+mono_font = "Noto Sans KR"
+
+# 폰트 설명
+# heading_font : 게시글, 위젯 제목
+# body_font    : 게시글 본문
+# nav_font     : 네비게이션 바 (블로그 제목)
+# mono_font    : 코드블록 폰트

@@ -4,16 +4,16 @@ theme: "starter-academic"
 # Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: Academic # Website name
-baseurl: '' # Website URL
-copyright: '' # Footer text, e.g. '© {year} Me'
+title: JDW BLOG # Website name
+baseurl: 'www.jdwblog.com' # Website URL
+copyright: "© 2021. JDW all rights reserved." # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
 ############################
 
-defaultContentLanguage: en
-hasCJKLanguage: false
+defaultContentLanguage: ko
+hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
@@ -31,7 +31,7 @@ module:
 ############################
 
 enableGitInfo: false
-summaryLength: 30
+summaryLength: 80 # post(preview) word length
 paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
@@ -53,10 +53,10 @@ markup:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false
+    codeFences: false # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
   tableOfContents:
-    startLevel: 2
-    endLevel: 3
+    startLevel: 1
+    endLevel: 4
 imaging:
   resampleFilter: lanczos
   quality: 75
