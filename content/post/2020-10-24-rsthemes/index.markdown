@@ -26,6 +26,8 @@ output:
 ---
 
 
+
+
 <img src="https://media.giphy.com/media/Ai6o3zm3NwvOazPxkm/giphy.gif" alt="" width="100%"/>
 
 &nbsp;데이터분석 혹은 R프로그래밍을 진행할 때 가장 많이 보는것이 (아마도) 구글, 스택오버플로우, 그리고 Rstudio일 것입니다.대다수의 R 유저들은 사용하는 IDE로서 **Rstudio** 를 선호하는데요. 저 역시도 Rstudio에서 제공하는 각종 편의기능에 익숙해져 vscode와 같은 다른 IDE로 쉽사리 넘어가지 못하는것 같습니다. 그러나 오랜시간 비슷한 화면만을 보다보면 제아무리 만족스럽던 것도 점차 지루해지기 쉽상입니다. 이럴때 약간의 변화만 주어도 한결 나은 코딩을 할 수 있을텐데요. 오늘은 Rstudio에서 제공하는 기본테마를 벗어나 새롭고 다양한 테마를 제공할 뿐만아니라 테마변경을 손쉽게 하는 [__`rsthemes`__](https://github.com/gadenbuie/rsthemes) 패키지를 소개하고자 합니다.  

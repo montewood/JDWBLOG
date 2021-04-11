@@ -15,7 +15,7 @@
 - id: related
   translation: 관련문서
 - id: minute_read
-  translation: minute_read # 원본 : 분 읽기
+  translation: minute read # 원본 : 분 읽기
 - id: previous
   translation: 이전
 - id: next
