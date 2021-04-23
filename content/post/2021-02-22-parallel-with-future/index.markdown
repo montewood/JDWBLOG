@@ -16,7 +16,7 @@ tags:
 subtitle: ''
 summary: ''
 authors: []
-lastmod: '2021-04-08T18:34:01+09:00'
+lastmod: '2021-02-22T18:34:01+09:00'
 featured: no
 image:
   caption: ''
@@ -188,7 +188,7 @@ f1
 #> Value: <not collected>
 #> Conditions captured: <none>
 #> Early signaling: FALSE
-#> Owner process: 73e78643-9922-baed-9997-10d054ee8f84
+#> Owner process: 81d55a71-a4c6-da64-cea2-9ca8570374dc
 #> Class: 'MultisessionFuture', 'ClusterFuture', 'MultiprocessFuture', 'Future', 'environment'
 ```
 

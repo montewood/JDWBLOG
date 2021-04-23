@@ -9945,7 +9945,7 @@ ul.share li:hover i {
 }
 .author-card .card-title {
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 0px; // origin : `margin-bottom: 0px;`
     font-weight: 600;
     color: rgba(0,0,0,0.84);
 }
