@@ -36,7 +36,7 @@ social:
   link: https://www.jdwblog.com/post/index.xml
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/montewood
 # - icon: linkedin
 #   icon_pack: fab
 #   link: https://www.linkedin.com/
