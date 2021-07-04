@@ -79,7 +79,7 @@ highlight_languages:
   - r
   - python
   - latex
-highlight_style: "mono-blue"
+highlight_style: "dark"
 math: true
 diagram: false
 privacy_pack: false
