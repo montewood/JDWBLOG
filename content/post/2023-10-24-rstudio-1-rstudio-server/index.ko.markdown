@@ -191,7 +191,7 @@ print(str_ssh)
 
 ------------------------------------------------------------------------
 
-# Reference
+# References 
 
 - [https://github.com/naru-T/RstudioServer_on_Colab](https://github.com/naru-T/RstudioServer_on_Colab) (Github repository) 
 
