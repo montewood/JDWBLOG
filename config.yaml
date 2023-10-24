@@ -6,7 +6,7 @@ theme: "starter-academic"
 
 title: JDW BLOG # Website name
 baseurl: "https://www.jdwblog.com/" # Website URL
-copyright: "© 2021. JDW all rights reserved." # Footer text, e.g. '© {year} Me'
+copyright: "© 2023. JDW all rights reserved." # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE

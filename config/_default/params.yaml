@@ -20,7 +20,7 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: benefitgaia377@gmail.com
+email: jdwnovember@gmail.com
 # phone: 888 888 88 88
 # address:
 #   street: 450 Serra Mall
@@ -154,7 +154,7 @@ marketing:
   baidu_site_verification: ''
   baidu_tongji: ''
 cms:
-  branch: master
+  branch: main
   local_backend: false
 icon:
   pack:
