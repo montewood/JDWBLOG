@@ -76,7 +76,7 @@ UBUNTU_CODENAME=jammy
 &nbsp; 먼저 우분투 환경에서 **"rstudio"** 사용자를 생성하고 `sudo` 권한을 부여한다. 이는 `rstudio-server` 로그인에 필요한 과정이다. 
 &nbsp; 마지막 세번째 줄에 있는 `!su rstudio -c 'echo 1234 | sudo -S chmod -R 777 /var/log'`코드는 지금은 직접적인 연관이나 필요는 없지만 추후에 진행할 `tensorflow-R`을 설치할때 필요로 하기 때문에 미리 처리를 해 놓음.
 
-&nbsp; 비밀번호의 경우 현재 *1234*로 세팅을 해 놓았는데 혹시 `rstudio-server` 로그인 비밀번호를 바꾸고 싶다하면 코드에 있는 *1234*를 원하시는 비밀번호로 적어서 실행시키면 됩니다. 
+&nbsp; 비밀번호의 경우 현재 *1234*로 세팅을 해 놓았는데 혹시라도도 `rstudio-server` 로그인 비밀번호를 바꾸고 싶다하면 코드에 있는 *1234*를 원하시는 비밀번호로 적어서 실행시키면 된다. 
 
 ## 2. 필수 프로그램 설치 
 
@@ -126,7 +126,7 @@ UBUNTU_CODENAME=jammy
 </center>
 
 ### ngrok 토큰 발급 
-&nbsp; 다음으로 진행해야 할 것으로 `ngork` 서비스 관련 사항들이다. `ngork`는 로컬의 개발환경을 인터넷으로 공개적으로 접근 가능하게 만들어주는 터널링(Tunneling) 서비스라고 한다. 주로 시스템 혹은 웹 개발시 테스트 혹은 디버깅 작업을 수행하는데 사용되는 서비스인데 우리는 이것을 통해 내부 `rstudio-server`의 로컬 주소 및 포트를 접근할 수 있는 주소를 만드는데 사용할 것입니다. [https://dashboard.ngrok.com/auth/your-authtoken](https://dashboard.ngrok.com/auth/your-authtoken) 다음에 사이트에서 ngork 가입 및 토큰을 발급받습니다. 
+&nbsp; 다음으로 진행해야 할 것으로 `ngork` 서비스 관련 사항들이다. `ngork`는 로컬의 개발환경을 인터넷으로 공개적으로 접근 가능하게 만들어주는 터널링(Tunneling) 서비스라고 한다. 주로 시스템 혹은 웹 개발시 테스트의 용도나 디버깅 작업을 수행하는데 사용되는 서비스인데 우리는 이것을 통해 코랩 내부의 `rstudio-server` 로컬 주소 및 포트를 접근할 수 있는 주소를 만드는데 사용할 것. [https://dashboard.ngrok.com/auth/your-authtoken](https://dashboard.ngrok.com/auth/your-authtoken) 다음에 사이트에서 ngork 가입 및 토큰을 발급을 진행하면 된다. 
 
 <img src="images/ngork_auth.png" alt="ngork account 토큰 발급" width="50%"/>
 
@@ -156,7 +156,7 @@ authtoken = getpass("Input your Auth token")
 
 ## 3. ngrok을 통한 Rstudio server 가동 
 
-&nbsp; 마지막으로 앞서 설정한 `ngork` 토큰을 통해 코랩 로컬에서 실행되어 있는 `rstudio-server` 웹 서버를 공용 IP 주소로 터널링하여 접근을 진행합니다. 아래의 코드를 실행시키면 나오는 주소가 바로 코랩으로 실행시킨 `rstudio-server`의 웹 주소입니다.
+&nbsp; 마지막으로 앞서 설정한 `ngork` 토큰을 통해 코랩 로컬에서 실행되어 있는 `rstudio-server` 웹 서버를 공용 IP 주소로 터널링하여 접근을 진행한다. 아래의 코드를 실행시키면 나오는 주소가 바로 코랩으로 실행시킨 `rstudio-server`의 웹 주소이므로 출력하여 나오는 주소로 접속.
 
 
 ```python
@@ -187,7 +187,7 @@ print(str_ssh)
 
 </center>
 
-&nbsp; 출력으로 나온 `ngork` 터널링 페이지에서 **Visit Site**를 클릭하면 우리가 설정한 `rstudio-server`의 로그인 화면이 보여지고, 이 후 최초에 설정한 로그인 입력정보`(ID : rstudio, PW : 1234)`를 입력하게 되면 비로소 코랩에서 코랩의 리소스를 통한 `Rstudio` 사용이 가능해 집니다. 
+&nbsp; 출력으로 나온 `ngork` 터널링 페이지에서 **Visit Site**를 클릭하면 우리가 설정한 `rstudio-server`의 로그인 화면을 볼 수 있고, 이 후에 앞서 설정한 로그인 입력정보`(ID : rstudio, PW : 1234)`를 입력하게 되면 비로소 코랩에서 코랩의 리소스를 통한 `Rstudio` 사용 가능하다.
 
 ------------------------------------------------------------------------
 

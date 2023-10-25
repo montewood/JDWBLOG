@@ -12,7 +12,7 @@ active: true
 # Order that this section appears on the page.
 weight: 65
 
-title: 개인 프로젝트
+title: Project
 subtitle: ''
 
 content:
