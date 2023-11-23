@@ -30,8 +30,8 @@ content:
   filter_button:
   - name: All
     tag: '*'
-  - name: 발행물
-    tag: 발행물
+  - name: Series
+    tag: Series
   - name: Shiny
     tag: Shiny
 
