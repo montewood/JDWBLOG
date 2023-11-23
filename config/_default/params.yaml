@@ -58,8 +58,9 @@ email: jdwnovember@gmail.com
 # Site header
 
 main_menu:
+  block: navbar
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: true

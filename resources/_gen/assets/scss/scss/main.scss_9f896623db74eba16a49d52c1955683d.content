@@ -17880,7 +17880,8 @@ div.alert a {
   height: 70px;
   background: #fff;
   box-shadow: 0 0.125rem 0.25rem 0 rgba(0, 0, 0, 0.11);
-  font-size: 13.86px;
+  font-size: 20px;
+  font-weight: bold;
   position: fixed;
   top: 0;
   right: 0;
