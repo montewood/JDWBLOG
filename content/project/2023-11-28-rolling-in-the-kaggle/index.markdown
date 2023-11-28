@@ -9,7 +9,7 @@ categories:
 tags:
   - Kaggle
   - DeepLearning
-subtitle: ''
+subtitle: '케글 연습장'
 summary: ''
 authors: [JDW]
 external_link: 'https://www.jdwblog.com/courses/diegesting-deep-learning/'
