@@ -9,8 +9,8 @@ tags:
   - DeepLearning
 subtitle: ''
 summary: '딥러닝 핵심 개념 정리 노트'
-authors: []
-external_link: 'https://www.jdwblog.com/courses/diegesting-deep-learning/'
+authors: [JDW]
+external_link: 'https://www.jdwblog.com/courses/digesting-deep-learning/'
 lastmod: '2023-11-23T18:26:37+09:00'
 featured: no
 image:
