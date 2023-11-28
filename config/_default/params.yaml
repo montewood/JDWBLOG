@@ -81,7 +81,10 @@ highlight_languages:
   - python
   - latex
 # highlight_style: "dark"
-highlight_style: "nnfx-dark"
+# highlight_style: "paraiso-dark"
+# highlight_style: "foundation"
+# highlight_style: "xcode"
+highlight_style: "docco"
 math: true
 diagram: false
 privacy_pack: false

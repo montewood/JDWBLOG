@@ -1,30 +1,30 @@
 ---
-bio: 데이터 분석가의 길을 걷고 있습니다. 
-# education:
-#   courses:
-#   - course: PhD in Artificial Intelligence
-#     institution: Stanford University
-#     year: 2012
+bio: 
+education:
+  courses:
+  - course: Master in ICT Convergence
+    institution: UNIST
+    year: 2023
 #   - course: MEng in Artificial Intelligence
 #     institution: Massachusetts Institute of Technology
 #     year: 2009
 #   - course: BSc in Artificial Intelligence
 #     institution: Massachusetts Institute of Technology
 #     year: 2008
-# email: ""
+email: "jdwnovember@gmail.com"
 highlight_name: true
-# interests:
-# - Artificial Intelligence
-# - Computational Linguistics
-# - Information Retrieval
-# organizations:
-# - name: Stanford University
-#   url: https://www.stanford.edu/
-# role: Professor of Artificial Intelligence
+interests:
+- Time-Series Anomaly Detection
+- Meta Learning
+- Data Analysis
+organizations:
+- name: UNIST
+  url: https://www.unist.ac.kr/?go=main
+role: UNIST M.S. Student
 social:
 - icon: envelope
   icon_pack: fas
-  link: 'benefitgaia377@gmail.com'
+  link: 'jdwnovember@gmail.com'
 # - display:
 #     header: true
 #   icon: twitter
@@ -44,8 +44,3 @@ superuser: true
 title: JDW
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
-
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "media/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
