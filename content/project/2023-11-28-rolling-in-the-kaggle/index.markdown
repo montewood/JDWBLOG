@@ -9,8 +9,8 @@ categories:
 tags:
   - Kaggle
   - DeepLearning
-subtitle: '케글 연습장'
-summary: ''
+subtitle: ''
+summary: '케글 연습장'
 authors: [JDW]
 external_link: 'https://www.jdwblog.com/courses/rolling-in-the-kaggle/'
 lastmod: '2023-11-28T06:17:24Z'

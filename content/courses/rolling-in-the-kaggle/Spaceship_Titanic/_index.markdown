@@ -6,6 +6,11 @@ type: book
 weight: 10
 ---
 
+<center> 
+
+**Link** : <https://www.kaggle.com/competitions/spaceship-titanic/data>
+
+</center>
 
 # Dataset Description
 

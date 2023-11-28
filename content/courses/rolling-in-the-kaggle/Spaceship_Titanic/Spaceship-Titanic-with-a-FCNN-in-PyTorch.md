@@ -9,7 +9,11 @@ output: md_document
 
 
 
+<center>
+
  **Original Notebook** : <https://www.kaggle.com/code/marcokurepa/0-80032-spaceship-titanic-with-a-fcnn-in-pytorch> 
+ 
+</center>
 
 # Data Dictionary
 
@@ -931,7 +935,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 1/100, Train Loss: 6.2465, Valid Loss: 0.7985
+#> Epoch 1/100, Train Loss: 4.1116, Valid Loss: 0.5677
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -948,7 +952,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 2/100, Train Loss: 1.7841, Valid Loss: 0.6037
+#> Epoch 2/100, Train Loss: 1.0441, Valid Loss: 0.5959
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -965,7 +970,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 3/100, Train Loss: 0.9905, Valid Loss: 0.6312
+#> Epoch 3/100, Train Loss: 0.6858, Valid Loss: 0.6044
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -983,7 +988,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 4/100, Train Loss: 0.7927, Valid Loss: 0.5916
+#> Epoch 4/100, Train Loss: 0.6054, Valid Loss: 0.5595
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1000,7 +1005,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 5/100, Train Loss: 0.6280, Valid Loss: 0.5567
+#> Epoch 5/100, Train Loss: 0.5898, Valid Loss: 0.5119
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1017,7 +1022,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 6/100, Train Loss: 0.6063, Valid Loss: 0.5144
+#> Epoch 6/100, Train Loss: 0.5789, Valid Loss: 0.5059
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1034,7 +1039,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 7/100, Train Loss: 0.6280, Valid Loss: 0.5008
+#> Epoch 7/100, Train Loss: 0.5547, Valid Loss: 0.5062
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1051,7 +1057,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 8/100, Train Loss: 0.5809, Valid Loss: 0.4788
+#> Epoch 8/100, Train Loss: 0.5482, Valid Loss: 0.4941
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1068,8 +1074,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 9/100, Train Loss: 0.5597, Valid Loss: 0.4877
-#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
+#> Epoch 9/100, Train Loss: 0.6016, Valid Loss: 0.4782
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1086,8 +1091,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 10/100, Train Loss: 0.5563, Valid Loss: 0.4797
-#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
+#> Epoch 10/100, Train Loss: 0.5295, Valid Loss: 0.4691
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1104,7 +1108,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 11/100, Train Loss: 0.5279, Valid Loss: 0.4680
+#> Epoch 11/100, Train Loss: 0.5192, Valid Loss: 0.4692
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1121,7 +1126,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 12/100, Train Loss: 0.5232, Valid Loss: 0.4639
+#> Epoch 12/100, Train Loss: 0.5344, Valid Loss: 0.4562
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1138,8 +1143,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 13/100, Train Loss: 0.5064, Valid Loss: 0.4654
-#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
+#> Epoch 13/100, Train Loss: 0.5128, Valid Loss: 0.4527
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1156,7 +1160,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 14/100, Train Loss: 0.5078, Valid Loss: 0.4588
+#> Epoch 14/100, Train Loss: 0.5139, Valid Loss: 0.4557
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1173,7 +1178,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 15/100, Train Loss: 0.5013, Valid Loss: 0.4438
+#> Epoch 15/100, Train Loss: 0.5019, Valid Loss: 0.4395
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1190,7 +1195,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 16/100, Train Loss: 0.5265, Valid Loss: 0.4461
+#> Epoch 16/100, Train Loss: 0.5033, Valid Loss: 0.4412
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1208,7 +1213,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 17/100, Train Loss: 0.4986, Valid Loss: 0.4556
+#> Epoch 17/100, Train Loss: 0.4938, Valid Loss: 0.4580
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1226,8 +1231,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 18/100, Train Loss: 0.5117, Valid Loss: 0.4511
-#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
+#> Epoch 18/100, Train Loss: 0.4847, Valid Loss: 0.4352
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1244,7 +1248,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 19/100, Train Loss: 0.4982, Valid Loss: 0.4468
+#> Epoch 19/100, Train Loss: 0.5027, Valid Loss: 0.4696
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1262,7 +1266,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 20/100, Train Loss: 0.5106, Valid Loss: 0.4455
+#> Epoch 20/100, Train Loss: 0.4884, Valid Loss: 0.4628
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1280,7 +1284,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 21/100, Train Loss: 0.4864, Valid Loss: 0.4416
+#> Epoch 21/100, Train Loss: 0.4873, Valid Loss: 0.4559
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1297,7 +1302,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 22/100, Train Loss: 0.4927, Valid Loss: 0.4446
+#> Epoch 22/100, Train Loss: 0.4872, Valid Loss: 0.4400
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1315,7 +1320,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 23/100, Train Loss: 0.4777, Valid Loss: 0.4435
+#> Epoch 23/100, Train Loss: 0.4855, Valid Loss: 0.4451
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1333,7 +1338,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 24/100, Train Loss: 0.4765, Valid Loss: 0.4396
+#> Epoch 24/100, Train Loss: 0.5000, Valid Loss: 0.4359
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1350,7 +1356,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 25/100, Train Loss: 0.4767, Valid Loss: 0.4384
+#> Epoch 25/100, Train Loss: 0.4933, Valid Loss: 0.4304
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1367,7 +1373,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 26/100, Train Loss: 0.4786, Valid Loss: 0.4442
+#> Epoch 26/100, Train Loss: 0.4720, Valid Loss: 0.4545
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1385,7 +1391,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 27/100, Train Loss: 0.4694, Valid Loss: 0.4393
+#> Epoch 27/100, Train Loss: 0.4761, Valid Loss: 0.4417
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1403,7 +1409,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 28/100, Train Loss: 0.4838, Valid Loss: 0.4405
+#> Epoch 28/100, Train Loss: 0.4927, Valid Loss: 0.4416
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1421,7 +1427,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 29/100, Train Loss: 0.4721, Valid Loss: 0.4388
+#> Epoch 29/100, Train Loss: 0.4751, Valid Loss: 0.4373
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1439,7 +1445,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 30/100, Train Loss: 0.4729, Valid Loss: 0.4387
+#> Epoch 30/100, Train Loss: 0.4719, Valid Loss: 0.4366
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1457,7 +1463,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 31/100, Train Loss: 0.4644, Valid Loss: 0.4411
+#> Epoch 31/100, Train Loss: 0.4660, Valid Loss: 0.4380
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1475,7 +1481,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 32/100, Train Loss: 0.4684, Valid Loss: 0.4426
+#> Epoch 32/100, Train Loss: 0.4660, Valid Loss: 0.4367
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1493,7 +1499,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 33/100, Train Loss: 0.4678, Valid Loss: 0.4395
+#> Epoch 33/100, Train Loss: 0.4597, Valid Loss: 0.4345
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1511,7 +1517,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 34/100, Train Loss: 0.4671, Valid Loss: 0.4374
+#> Epoch 34/100, Train Loss: 0.4618, Valid Loss: 0.4382
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1528,7 +1535,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 35/100, Train Loss: 0.4652, Valid Loss: 0.4399
+#> Epoch 35/100, Train Loss: 0.4649, Valid Loss: 0.4375
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1546,7 +1553,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 36/100, Train Loss: 0.4626, Valid Loss: 0.4385
+#> Epoch 36/100, Train Loss: 0.4591, Valid Loss: 0.4355
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1564,7 +1571,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 37/100, Train Loss: 0.4674, Valid Loss: 0.4367
+#> Epoch 37/100, Train Loss: 0.4538, Valid Loss: 0.4358
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1581,7 +1589,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 38/100, Train Loss: 0.4610, Valid Loss: 0.4379
+#> Epoch 38/100, Train Loss: 0.4562, Valid Loss: 0.4398
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1599,7 +1607,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 39/100, Train Loss: 0.4618, Valid Loss: 0.4374
+#> Epoch 39/100, Train Loss: 0.4578, Valid Loss: 0.4378
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1617,7 +1625,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 40/100, Train Loss: 0.4618, Valid Loss: 0.4387
+#> Epoch 40/100, Train Loss: 0.4797, Valid Loss: 0.4380
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1635,7 +1643,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 41/100, Train Loss: 0.4629, Valid Loss: 0.4368
+#> Epoch 41/100, Train Loss: 0.4587, Valid Loss: 0.4393
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1653,7 +1661,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 42/100, Train Loss: 0.4567, Valid Loss: 0.4381
+#> Epoch 42/100, Train Loss: 0.4600, Valid Loss: 0.4388
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1671,7 +1679,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 43/100, Train Loss: 0.4608, Valid Loss: 0.4370
+#> Epoch 43/100, Train Loss: 0.4586, Valid Loss: 0.4374
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1689,7 +1697,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 44/100, Train Loss: 0.4618, Valid Loss: 0.4363
+#> Epoch 44/100, Train Loss: 0.4547, Valid Loss: 0.4363
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1706,7 +1715,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 45/100, Train Loss: 0.4621, Valid Loss: 0.4331
+#> Epoch 45/100, Train Loss: 0.4773, Valid Loss: 0.4390
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1723,7 +1733,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 46/100, Train Loss: 0.4611, Valid Loss: 0.4338
+#> Epoch 46/100, Train Loss: 0.4590, Valid Loss: 0.4342
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1741,7 +1751,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 47/100, Train Loss: 0.4678, Valid Loss: 0.4363
+#> Epoch 47/100, Train Loss: 0.4600, Valid Loss: 0.4359
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1759,7 +1769,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 48/100, Train Loss: 0.4581, Valid Loss: 0.4341
+#> Epoch 48/100, Train Loss: 0.4576, Valid Loss: 0.4332
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1777,7 +1787,8 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 49/100, Train Loss: 0.4575, Valid Loss: 0.4315
+#> Epoch 49/100, Train Loss: 0.4602, Valid Loss: 0.4338
+#> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
 #>   (fc2): Linear(in_features=128, out_features=64, bias=True)
@@ -1794,7 +1805,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 50/100, Train Loss: 0.4654, Valid Loss: 0.4328
+#> Epoch 50/100, Train Loss: 0.4554, Valid Loss: 0.4346
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1812,7 +1823,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 51/100, Train Loss: 0.4598, Valid Loss: 0.4371
+#> Epoch 51/100, Train Loss: 0.4625, Valid Loss: 0.4354
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1830,7 +1841,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 52/100, Train Loss: 0.4581, Valid Loss: 0.4354
+#> Epoch 52/100, Train Loss: 0.4563, Valid Loss: 0.4331
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1848,7 +1859,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 53/100, Train Loss: 0.4599, Valid Loss: 0.4390
+#> Epoch 53/100, Train Loss: 0.4596, Valid Loss: 0.4344
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1866,7 +1877,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 54/100, Train Loss: 0.4507, Valid Loss: 0.4363
+#> Epoch 54/100, Train Loss: 0.4597, Valid Loss: 0.4353
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1884,7 +1895,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 55/100, Train Loss: 0.4567, Valid Loss: 0.4323
+#> Epoch 55/100, Train Loss: 0.4584, Valid Loss: 0.4353
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1902,7 +1913,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 56/100, Train Loss: 0.4580, Valid Loss: 0.4364
+#> Epoch 56/100, Train Loss: 0.4517, Valid Loss: 0.4331
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1920,7 +1931,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 57/100, Train Loss: 0.4619, Valid Loss: 0.4358
+#> Epoch 57/100, Train Loss: 0.4587, Valid Loss: 0.4316
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1938,7 +1949,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 58/100, Train Loss: 0.4575, Valid Loss: 0.4328
+#> Epoch 58/100, Train Loss: 0.4569, Valid Loss: 0.4342
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1956,7 +1967,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 59/100, Train Loss: 0.4581, Valid Loss: 0.4363
+#> Epoch 59/100, Train Loss: 0.4547, Valid Loss: 0.4376
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1974,7 +1985,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 60/100, Train Loss: 0.4589, Valid Loss: 0.4347
+#> Epoch 60/100, Train Loss: 0.4521, Valid Loss: 0.4362
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -1992,7 +2003,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 61/100, Train Loss: 0.4554, Valid Loss: 0.4347
+#> Epoch 61/100, Train Loss: 0.4533, Valid Loss: 0.4348
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2010,7 +2021,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 62/100, Train Loss: 0.4582, Valid Loss: 0.4354
+#> Epoch 62/100, Train Loss: 0.4565, Valid Loss: 0.4333
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2028,7 +2039,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 63/100, Train Loss: 0.4557, Valid Loss: 0.4354
+#> Epoch 63/100, Train Loss: 0.4552, Valid Loss: 0.4331
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2046,7 +2057,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 64/100, Train Loss: 0.4503, Valid Loss: 0.4349
+#> Epoch 64/100, Train Loss: 0.4596, Valid Loss: 0.4334
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2064,7 +2075,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 65/100, Train Loss: 0.4613, Valid Loss: 0.4350
+#> Epoch 65/100, Train Loss: 0.4587, Valid Loss: 0.4333
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2082,7 +2093,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 66/100, Train Loss: 0.4532, Valid Loss: 0.4347
+#> Epoch 66/100, Train Loss: 0.4510, Valid Loss: 0.4333
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2100,7 +2111,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 67/100, Train Loss: 0.4609, Valid Loss: 0.4349
+#> Epoch 67/100, Train Loss: 0.4541, Valid Loss: 0.4331
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2118,7 +2129,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 68/100, Train Loss: 0.4549, Valid Loss: 0.4349
+#> Epoch 68/100, Train Loss: 0.4697, Valid Loss: 0.4329
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2136,7 +2147,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 69/100, Train Loss: 0.4560, Valid Loss: 0.4353
+#> Epoch 69/100, Train Loss: 0.4484, Valid Loss: 0.4323
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2154,7 +2165,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 70/100, Train Loss: 0.4577, Valid Loss: 0.4352
+#> Epoch 70/100, Train Loss: 0.4542, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2172,7 +2183,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 71/100, Train Loss: 0.4548, Valid Loss: 0.4346
+#> Epoch 71/100, Train Loss: 0.4527, Valid Loss: 0.4323
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2190,7 +2201,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 72/100, Train Loss: 0.4514, Valid Loss: 0.4346
+#> Epoch 72/100, Train Loss: 0.4559, Valid Loss: 0.4328
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2208,7 +2219,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 73/100, Train Loss: 0.4583, Valid Loss: 0.4346
+#> Epoch 73/100, Train Loss: 0.4571, Valid Loss: 0.4327
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2226,7 +2237,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 74/100, Train Loss: 0.4554, Valid Loss: 0.4346
+#> Epoch 74/100, Train Loss: 0.4533, Valid Loss: 0.4322
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2244,7 +2255,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 75/100, Train Loss: 0.4499, Valid Loss: 0.4342
+#> Epoch 75/100, Train Loss: 0.4544, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2262,7 +2273,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 76/100, Train Loss: 0.4569, Valid Loss: 0.4344
+#> Epoch 76/100, Train Loss: 0.4547, Valid Loss: 0.4321
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2280,7 +2291,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 77/100, Train Loss: 0.4580, Valid Loss: 0.4350
+#> Epoch 77/100, Train Loss: 0.4561, Valid Loss: 0.4328
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2298,7 +2309,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 78/100, Train Loss: 0.4611, Valid Loss: 0.4354
+#> Epoch 78/100, Train Loss: 0.4556, Valid Loss: 0.4326
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2316,7 +2327,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 79/100, Train Loss: 0.4621, Valid Loss: 0.4351
+#> Epoch 79/100, Train Loss: 0.4554, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2334,7 +2345,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 80/100, Train Loss: 0.4598, Valid Loss: 0.4353
+#> Epoch 80/100, Train Loss: 0.4561, Valid Loss: 0.4326
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2352,7 +2363,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 81/100, Train Loss: 0.4613, Valid Loss: 0.4354
+#> Epoch 81/100, Train Loss: 0.4568, Valid Loss: 0.4326
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2370,7 +2381,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 82/100, Train Loss: 0.4635, Valid Loss: 0.4355
+#> Epoch 82/100, Train Loss: 0.4544, Valid Loss: 0.4321
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2388,7 +2399,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 83/100, Train Loss: 0.4545, Valid Loss: 0.4350
+#> Epoch 83/100, Train Loss: 0.4541, Valid Loss: 0.4318
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2406,7 +2417,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 84/100, Train Loss: 0.4588, Valid Loss: 0.4353
+#> Epoch 84/100, Train Loss: 0.4548, Valid Loss: 0.4321
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2424,7 +2435,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 85/100, Train Loss: 0.4594, Valid Loss: 0.4354
+#> Epoch 85/100, Train Loss: 0.4525, Valid Loss: 0.4323
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2442,7 +2453,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 86/100, Train Loss: 0.4599, Valid Loss: 0.4351
+#> Epoch 86/100, Train Loss: 0.4526, Valid Loss: 0.4319
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2460,7 +2471,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 87/100, Train Loss: 0.4557, Valid Loss: 0.4351
+#> Epoch 87/100, Train Loss: 0.4498, Valid Loss: 0.4315
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2478,7 +2489,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 88/100, Train Loss: 0.4527, Valid Loss: 0.4343
+#> Epoch 88/100, Train Loss: 0.4585, Valid Loss: 0.4321
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2496,7 +2507,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 89/100, Train Loss: 0.4529, Valid Loss: 0.4344
+#> Epoch 89/100, Train Loss: 0.4501, Valid Loss: 0.4321
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2514,7 +2525,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 90/100, Train Loss: 0.4531, Valid Loss: 0.4343
+#> Epoch 90/100, Train Loss: 0.4748, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2532,7 +2543,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 91/100, Train Loss: 0.4648, Valid Loss: 0.4344
+#> Epoch 91/100, Train Loss: 0.4520, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2550,7 +2561,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 92/100, Train Loss: 0.4640, Valid Loss: 0.4343
+#> Epoch 92/100, Train Loss: 0.4545, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2568,7 +2579,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 93/100, Train Loss: 0.4558, Valid Loss: 0.4343
+#> Epoch 93/100, Train Loss: 0.4583, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2586,7 +2597,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 94/100, Train Loss: 0.4495, Valid Loss: 0.4343
+#> Epoch 94/100, Train Loss: 0.4546, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2604,7 +2615,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 95/100, Train Loss: 0.4594, Valid Loss: 0.4343
+#> Epoch 95/100, Train Loss: 0.4528, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2622,7 +2633,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 96/100, Train Loss: 0.4516, Valid Loss: 0.4342
+#> Epoch 96/100, Train Loss: 0.4708, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2640,7 +2651,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 97/100, Train Loss: 0.4679, Valid Loss: 0.4342
+#> Epoch 97/100, Train Loss: 0.4565, Valid Loss: 0.4326
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2658,7 +2669,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 98/100, Train Loss: 0.4561, Valid Loss: 0.4342
+#> Epoch 98/100, Train Loss: 0.4526, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2676,7 +2687,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 99/100, Train Loss: 0.4508, Valid Loss: 0.4342
+#> Epoch 99/100, Train Loss: 0.4550, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 #> FCNN(
 #>   (fc1): Linear(in_features=17, out_features=128, bias=True)
@@ -2694,7 +2705,7 @@ for epoch in range(num_epochs):
 #>   (dropout): Dropout(p=0.5, inplace=False)
 #>   (sigmoid): Sigmoid()
 #> )
-#> Epoch 100/100, Train Loss: 0.4514, Valid Loss: 0.4342
+#> Epoch 100/100, Train Loss: 0.4524, Valid Loss: 0.4325
 #> No improvement in validation loss for this epoch. Model parameters from last epoch with best validation loss were saved.
 ```
 
@@ -2753,7 +2764,7 @@ print(f"Test Loss : {test_loss:.4f}")
 ```
 
 ```
-#> Test Loss : 0.4438
+#> Test Loss : 0.4471
 ```
 
 ```python
@@ -2761,7 +2772,7 @@ print(f"Test AUC-ROC: {test_auc_roc:.4f}")
 ```
 
 ```
-#> Test AUC-ROC: 0.8703
+#> Test AUC-ROC: 0.8678
 ```
 
 
@@ -2779,13 +2790,13 @@ print(test_predictions)
 ```
 
 ```
-#> [[0.22521724]
-#>  [0.62050796]
-#>  [0.6320395 ]
+#> [[0.21641082]
+#>  [0.5988087 ]
+#>  [0.6309667 ]
 #>  ...
-#>  [0.39599884]
-#>  [0.79942656]
-#>  [0.03034774]]
+#>  [0.38249907]
+#>  [0.8262449 ]
+#>  [0.00775074]]
 ```
 
 # Visualization 
@@ -2823,7 +2834,7 @@ plt.plot(fpr, tpr, label = f"AUC-ROC = {test_auc_roc:.4f}")
 ```
 
 ```
-#> [<matplotlib.lines.Line2D object at 0x7f1ae82df610>]
+#> [<matplotlib.lines.Line2D object at 0x7fc6a85a8b50>]
 ```
 
 ```python
@@ -2831,7 +2842,7 @@ plt.plot([0, 1], [0, 1], linestyle = "--", color = "r")
 ```
 
 ```
-#> [<matplotlib.lines.Line2D object at 0x7f1ae8100130>]
+#> [<matplotlib.lines.Line2D object at 0x7fc6a85a98a0>]
 ```
 
 ```python
@@ -2863,7 +2874,7 @@ plt.legend()
 ```
 
 ```
-#> <matplotlib.legend.Legend object at 0x7f1ae8103280>
+#> <matplotlib.legend.Legend object at 0x7fc6a85a95a0>
 ```
 
 ```python
@@ -2933,7 +2944,7 @@ print(f"Test Accuracy : {test_accuracy:.4f}")
 ```
 
 ```
-#> Test Accuracy : 0.7855
+#> Test Accuracy : 0.7809
 ```
 
 # Submission 
