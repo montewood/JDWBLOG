@@ -1,5 +1,5 @@
 ---
-bio: 
+bio: "Take a lot of effort to overcome big hurdles."
 education:
   courses:
   - course: Master in ICT Convergence
