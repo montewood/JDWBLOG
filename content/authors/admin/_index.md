@@ -22,24 +22,24 @@ organizations:
   url: https://www.unist.ac.kr/?go=main
 role: UNIST M.S. Student
 social:
+- icon: github
+  icon_pack: fab
+  link: https://github.com/montewood
 - icon: envelope
   icon_pack: fas
   link: 'jdwnovember@gmail.com'
+- icon: rss
+  icon_pack: fas
+  link: https://www.jdwblog.com/post/index.xml
+# - icon: linkedin
+#   icon_pack: fab
+#   link: https://www.linkedin.com/
 # - display:
 #     header: true
 #   icon: twitter
 #   icon_pack: fab
 #   label: Follow me on Twitter
 #   link: https://twitter.com/GeorgeCushen
-- icon: rss
-  icon_pack: fas
-  link: https://www.jdwblog.com/post/index.xml
-- icon: github
-  icon_pack: fab
-  link: https://github.com/montewood
-# - icon: linkedin
-#   icon_pack: fab
-#   link: https://www.linkedin.com/
 superuser: true
 title: JDW
 ---
