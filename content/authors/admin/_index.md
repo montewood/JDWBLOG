@@ -19,7 +19,7 @@ interests:
 - Time-Series Anomaly Detection
 - Data Product
 organizations:
-- name: InterX
+- name: INTERX
   url: http://interxlab.com/
 - name: UNIST
   url: https://www.unist.ac.kr/?go=main
