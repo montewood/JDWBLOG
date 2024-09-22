@@ -17,6 +17,19 @@
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
 {{ $avatar_shape := site.Params.avatar.shape | default "circle" }}
 
+<!-- 스타일 추가 -->
+<style>
+  #out {
+    width: 780px !important;
+    height: 400px !important; /* 명시적으로 높이 설정 */
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+  }
+</style>
+
 <!-- About widget -->
 <div class="row">
   <div class="col-12 col-lg-4">
@@ -77,7 +90,6 @@
     </div>
 
     <div class="row">
-
       {{ with $person.interests }}
       <div class="col-md-5">
         <div class="section-subheading">{{ i18n "interests" | markdownify }}</div>
@@ -105,7 +117,34 @@
         </ul>
       </div>
       {{ end }}
-
     </div>
+
+    <!-- 추가된 HTML 코드 (webR 및 plotly 불러오기) -->
+    <div>
+      <pre><code id="out">Loading webR, please wait...</code></pre>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.2/plotly.min.js" charset="utf-8"></script>
+    <script type="module">
+      import { WebR } from 'https://webr.r-wasm.org/latest/webr.mjs';
+      const webR = new WebR({ interactive: false });
+      await webR.init();
+      const outElem = document.getElementById('out');
+      outElem.innerText = 'Loading plotly, please wait...';
+      await webR.installPackages(['jsonlite', 'ggplot2', 'plotly'], true);
+      outElem.innerText = 'Generating plot, please wait...';
+      const plotlyData = await webR.evalRString(`
+library(plotly)
+library(ggplot2)
+
+p <- ggplot(mpg, aes(displ, hwy, colour = class)) +
+  geom_point()
+
+plotly_json(p, pretty = FALSE)
+`);
+      outElem.replaceChildren();
+      Plotly.newPlot('out', JSON.parse(plotlyData), {});
+    </script>
+
   </div>
 </div>

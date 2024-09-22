@@ -1,10 +1,10 @@
 ---
-bio: "Take a lot of effort to overcome big hurdles."
+bio: "Professionalism"
 education:
   courses:
   - course: Master in ICT Convergence
     institution: UNIST
-    year: 2023
+    year: Student
 #   - course: MEng in Artificial Intelligence
 #     institution: Massachusetts Institute of Technology
 #     year: 2009
@@ -14,13 +14,16 @@ education:
 email: "jdwnovember@gmail.com"
 highlight_name: true
 interests:
+- R+Python
+- DeepLearning (Pytorch)
 - Time-Series Anomaly Detection
-- Meta Learning
-- Data Analysis
+- Data Product
 organizations:
+- name: InterX
+  url: http://interxlab.com/
 - name: UNIST
   url: https://www.unist.ac.kr/?go=main
-role: UNIST M.S. Student
+role: Data Analyst<br>UNIST M.S. Student
 social:
 - icon: github
   icon_pack: fab

@@ -1,0 +1,35 @@
+---
+date: "2023-11-28"
+linkTitle: "Shopee - Price Match Guarantee"
+title: "Shopee - Price Match Guarantee"
+type: book 
+weight: 50
+---
+
+
+
+<center>
+<p><strong>Link</strong> : <a href="https://www.kaggle.com/competitions/spaceship-titanic/data" class="uri">https://www.kaggle.com/competitions/spaceship-titanic/data</a></p>
+</center>
+<div id="dataset-description" class="section level1">
+<h1>Dataset Description</h1>
+<p> Finding near-duplicates in large datasets is an important problem for many online businesses. In Shopee’s case, everyday users can upload their own images and write their own product descriptions, adding an extra layer of challenge. Your task is to identify which products have been posted repeatedly. The differences between related products may be subtle while photos of identical products may be wildly different!</p>
+<p> As this is a code competition, only the first few rows/images of the test set are published; the remainder are only available to your notebook when it is submitted. Expect to find roughly 70,000 images in the hidden test set. The few test rows and images that are provided are intended to illustrate the hidden test set format and folder structure.</p>
+</div>
+<div id="file-and-data-field-descriptions" class="section level1">
+<h1>File and Data Field Descriptions</h1>
+<p><strong>[train/test].csv</strong> - the training set metadata. Each row contains the data for a single posting. multiple postings might have the exact same image ID, but with different titles or vice versa.</p>
+<ul>
+<li><p><code>posting-id</code> - the Id code for posting.</p></li>
+<li><p><code>image</code> - the image id/md5sum.</p></li>
+<li><p><code>image_phash</code> - a perceptual hash of the image.</p></li>
+<li><p><code>title</code> - the product description for the posting.</p></li>
+<li><p><code>label_group</code> - ID code for all postings that map to the same product. not provided for the test set.</p></li>
+</ul>
+<p><strong>[train/test]images</strong> - the images associated with the postings.</p>
+<p><strong>sample_submission.csv</strong> - a sample submission file in the correct format.</p>
+<ul>
+<li><p><code>posting_id</code> - the id code for the posting.</p></li>
+<li><p><code>matches</code> - Space delimited list of all posting IDs that match this posting. posts always self-match. Group sizes were capped at 50, so there’s no need to predict more that 50 matches.</p></li>
+</ul>
+</div>

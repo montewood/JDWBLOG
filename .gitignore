@@ -54,6 +54,7 @@ rsconnect/
 # Excluding Original files
 *.Rmd
 *.Rmarkdown
+*.qmd
 
 
 .Rproj.user
