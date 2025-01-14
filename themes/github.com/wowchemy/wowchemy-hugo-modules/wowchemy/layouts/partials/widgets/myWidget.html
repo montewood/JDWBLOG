@@ -1,0 +1,151 @@
+<!-- 로딩 메시지 영역 -->
+<div id="loading">
+  <h3>로딩 중... 잠시만 기다려 주세요.</h3>
+</div>
+
+<!-- R 콘솔 확인용(선택 사항) -->
+<div id="console" style="border:1px solid #ccc; height:150px; overflow:auto;">
+  <pre id="out"></pre>
+</div>
+
+<!-- Service Worker 등록 스크립트 -->
+<script>
+  let clientId;
+  navigator.serviceWorker.register('./httpuv-serviceworker.js').then(async (registration) => {
+    await navigator.serviceWorker.ready;
+
+    // 서비스 워커가 활성화됐는데 아직 제어 중이 아니면 새로고침
+    if (!navigator.serviceWorker.controller) {
+      window.location.reload();
+    }
+
+    // Service Worker -> 클라이언트 ID 수신
+    clientId = await new Promise((resolve) => {
+      navigator.serviceWorker.addEventListener('message', function listener(event) {
+        if (event.data.type === 'registration-successful') {
+          navigator.serviceWorker.removeEventListener('message', listener);
+          resolve(event.data.clientId);
+        }
+      });
+      registration.active.postMessage({ type: "register-client" });
+    });
+    console.log("Client ID:", clientId);
+    console.log("Service Worker ready");
+  });
+</script>
+
+<!-- WebR + Shiny iFrame 로딩 스크립트 -->
+<script type="module">
+  import { WebR } from 'https://webr.r-wasm.org/latest/webr.mjs';
+  // import { WebR } from 'https://webr.r-wasm.org/v0.2.2/webr.mjs';
+
+  // WebSocketProxy: httpuv와 연결할 때 WebSocket API를 가로채어 전달
+  class WebSocketProxy {
+    constructor(url) {
+      this.url = url;
+      this.handle = Math.random(); // 간단 예시
+      this.readyState = 0;
+      setTimeout(() => {
+        this.readyState = 1;
+        if (this.onopen) this.onopen();
+      }, 0);
+    }
+    send(msg) {
+      // 메시지를 WebR 쪽 onWSMessage로 전달
+      webR.evalRVoid(`
+        onWSMessage <- options('webr_httpuv_onWSMessage')[[1]]
+        if (!is.null(onWSMessage)) {
+          onWSMessage(${this.handle}, FALSE, '${msg}')
+        }
+      `);
+    }
+  }
+
+  // WebR 초기화
+  const webR = new WebR();
+  await webR.init();
+  await webR.installPackages(["shiny"], true);
+  console.log("WebR init OK");
+
+  // WebR 콘솔 출력(표준출력, 에러, httpuv 메시지 등) 모니터링
+  (async () => {
+    for (;;) {
+      const output = await webR.read();
+      switch (output.type) {
+        case 'stdout':
+        case 'stderr':
+          document.getElementById('out')?.append(output.data + '\n');
+          document.getElementById('console').scrollTop =
+            document.getElementById('console').scrollHeight;
+          break;
+        case '_webR_httpuv_TcpResponse':
+          // httpuv 응답을 Service Worker로 전달
+          const reg = await navigator.serviceWorker.getRegistration();
+          reg.active.postMessage({
+            type: "wasm-http-response",
+            uuid: output.uuid,
+            response: output.data,
+          });
+          break;
+        case '_webR_httpuv_WSResponse':
+          // httpuv로부터 받은 WebSocket 메시지 처리
+          const event = { data: output.data.message };
+          // 필요한 경우 여기서 WebSocketProxy 객체와 연동
+          break;
+      }
+    }
+  })();
+
+  // 파일을 WebR의 가상 파일시스템에 쓰는 함수
+  async function fetchToWebR(url, path) {
+    const req = await fetch(url);
+    const data = await req.arrayBuffer();
+    await webR.FS.writeFile(path, new Uint8Array(data));
+  }
+
+  // Shiny 앱이 들어갈 폴더 생성 후 ui.R, server.R 복사
+  await webR.FS.mkdir('/home/web_user/app');
+  await fetchToWebR('app/ui.R',     '/home/web_user/app/ui.R');
+  await fetchToWebR('app/server.R', '/home/web_user/app/server.R');
+
+  // Shiny 실행
+  webR.writeConsole(`
+    library(shiny)
+    runApp('app', launch.browser=FALSE)
+  `);
+
+  // Service Worker -> httpuv로 요청 전달할 때 사용하는 메시지 핸들러
+  navigator.serviceWorker.addEventListener('message', async (event) => {
+    if (event.data.type === 'wasm-http-fetch') {
+      const url = new URL(event.data.url);
+      const pathName = url.pathname.replace(/.*\/__wasm__\/([0-9a-fA-F-]{36})/, "");
+      const query = url.search.replace(/^\?/, '');
+      webR.evalRVoid(`
+        onRequest <- options("webr_httpuv_onRequest")[[1]]
+        if (!is.null(onRequest)) {
+          onRequest(list(
+            PATH_INFO="${pathName}",
+            REQUEST_METHOD="${event.data.method}",
+            UUID="${event.data.uuid}",
+            QUERY_STRING="${query}"
+          ))
+        }
+      `);
+    }
+  });
+
+  // iFrame으로 Shiny 앱 표시
+  const iframe = document.createElement('iframe');
+  iframe.id = 'app';
+  iframe.src = `./__wasm__/${window.clientId}/`;  // clientId 사용
+  iframe.frameBorder = '0';
+  iframe.style.width = '100%';
+  iframe.style.height = '500px';
+  document.body.appendChild(iframe);
+
+  // iFrame에서 생성되는 WebSocket을 위에서 만든 WebSocketProxy로 대체
+  iframe.contentWindow.WebSocket = WebSocketProxy;
+
+  // 로딩 메시지 숨기기
+  document.getElementById('loading').style.display = 'none';
+</script>

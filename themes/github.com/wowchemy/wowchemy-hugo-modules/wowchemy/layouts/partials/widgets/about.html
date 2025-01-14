@@ -19,7 +19,7 @@
 
 <!-- 스타일 추가 -->
 <style>
-  #out {
+  #out2 {
     width: 780px !important;
     height: 400px !important; /* 명시적으로 높이 설정 */
     padding-top: 0px;
@@ -121,7 +121,7 @@
 
     <!-- 추가된 HTML 코드 (webR 및 plotly 불러오기) -->
     <div>
-      <pre><code id="out">Loading webR, please wait...</code></pre>
+      <pre><code id="out2">Loading please wait...</code></pre>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/2.26.2/plotly.min.js" charset="utf-8"></script>
@@ -129,7 +129,7 @@
       import { WebR } from 'https://webr.r-wasm.org/latest/webr.mjs';
       const webR = new WebR({ interactive: false });
       await webR.init();
-      const outElem = document.getElementById('out');
+      const outElem = document.getElementById('out2');
       outElem.innerText = 'Loading plotly, please wait...';
       await webR.installPackages(['jsonlite', 'ggplot2', 'plotly'], true);
       outElem.innerText = 'Generating plot, please wait...';
@@ -143,7 +143,7 @@ p <- ggplot(mpg, aes(displ, hwy, colour = class)) +
 plotly_json(p, pretty = FALSE)
 `);
       outElem.replaceChildren();
-      Plotly.newPlot('out', JSON.parse(plotlyData), {});
+      Plotly.newPlot('out2', JSON.parse(plotlyData), {});
     </script>
 
   </div>

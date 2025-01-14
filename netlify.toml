@@ -12,3 +12,9 @@ command = "hugo -F -b $DEPLOY_PRIME_URL"
 [context.production]
 [context.production.environment]
 HUGO_ENV = "production"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    Cross-Origin-Opener-Policy = "same-origin"
+    Cross-Origin-Embedder-Policy = "require-corp"
