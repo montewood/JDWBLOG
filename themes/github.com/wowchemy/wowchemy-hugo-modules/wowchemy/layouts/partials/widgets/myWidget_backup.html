@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shiny App</title>
+
+    <!-- Service Worker 로드 -->
+    <script src="./shinylive/load-shinylive-sw.js" type="module"></script>
+
+    <!-- Shinylive 실행 -->
+    <script type="module">
+      import { runExportedApp } from "./shinylive/shinylive.js";
+      runExportedApp({
+        id: "root",
+        appEngine: "r",
+        relPath: "/shinylive",
+      });
+    </script>
+
+    <!-- 스타일 시트 적용 -->
+    <link rel="stylesheet" href="/shinylive/style-resets.css" />
+    <link rel="stylesheet" href="/shinylive/shinylive.css" />
+
+  </head>
+  <body>
+
+    <h2 style="text-align: center;">Shinylive App</h2>
+
+    <!-- Shiny 앱이 실행될 영역 -->
+    <div id="root" style="width: 100%; height: 600px; border: 1px solid #ccc; margin: auto;"></div>
+
+  </body>
+</html>

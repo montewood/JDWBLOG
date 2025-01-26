@@ -1,42 +1,40 @@
 theme: "starter-academic"
-# Configuration of Hugo
-# Guide: https://wowchemy.com/docs/getting-started/
-# Hugo Documentation: https://gohugo.io/getting-started/configuration/#all-configuration-settings
-# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
-title: JDW BLOG # Website name
-baseurl: "https://www.jdwblog.com/" # Website URL
-copyright: "© {year}. JDW all rights reserved." # Footer text, e.g. '© {year} Me'
-
-############################
-## LANGUAGE
-############################
+title: JDW BLOG
+baseurl: "https://www.jdwblog.com/"
+copyright: "© {year}. JDW all rights reserved."
 
 defaultContentLanguage: ko
 hasCJKLanguage: true
 defaultContentLanguageInSubdir: false
 removePathAccents: true
 
-############################
-## MODULES
-############################
-
 module:
   imports:
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy-cms
     - path: github.com/wowchemy/wowchemy-hugo-modules/wowchemy
 
-############################
-## ADVANCED
-############################
-
 enableGitInfo: false
-summaryLength: 80 # post(preview) word length
+summaryLength: 80
 paginate: 10
 enableEmoji: true
 enableRobotsTXT: true
 footnotereturnlinkcontents: <sup>^</sup>
-ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$, \.qmd$]
+
+ignoreFiles:
+  - "\\.ipynb$"
+  - "\\.ipynb_checkpoints$"
+  - "\\.Rmd$"
+  - "\\.Rmarkdown$"
+  - "_cache$"
+  - "\\.qmd$"
+  - "\\.woff2$"
+  - "\\.woff$"
+  - "\\.ttf$"
+
+staticDir:
+  - static
+
 permalinks:
   event: '/talk/:slug/'
   authors: '/author/:slug/'
@@ -44,29 +42,35 @@ permalinks:
   categories: '/category/:slug/'
   publication_types: '/publication-type/:slug/'
 disableAliases: true
+
 outputs:
   home: [HTML, RSS, JSON, WebAppManifest, headers, redirects]
   section: [HTML, RSS]
+
 markup:
   defaultMarkdownHandler: goldmark
   goldmark:
     renderer:
       unsafe: true
   highlight:
-    codeFences: false # Disable Hugo's code highlighter as it conflicts with Academic's highligher.
+    codeFences: false
   tableOfContents:
     startLevel: 1
     endLevel: 4
+
 imaging:
   resampleFilter: lanczos
   quality: 75
   anchor: smart
+
 timeout: 600000
+
 taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
   author: authors
+
 related:
   threshold: 80
   includeNewer: true
