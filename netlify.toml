@@ -2,7 +2,7 @@
   for = "/*"
   [headers.values]
     Cross-Origin-Opener-Policy = "same-origin"
-    Cross-Origin-Embedder-Policy = "require-corp"
+    X-Frame-Options = "SAMEORIGIN"
 
 [build]
 command = "hugo"
