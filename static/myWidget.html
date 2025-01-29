@@ -1,4 +1,3 @@
-<!-- main페이지 widget용 (iframe은 /static 폴더에 위치) -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -35,31 +34,18 @@
 
     <!-- 추가된 스타일 적용 -->
     <style>
-        #mywidget {
-            width: 1400px;
-            height: 505px;
-            margin-left: 0px;
-            margin-right: 0px;
-            padding-right: 0px;
-            padding-left: 0px;
-            padding-top: 0px;
-            padding-bottom: 0px;
-            margin: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            border: 1px solid #ccc;
-        }
-        #root {
-            width: 98%;
-            height: 98%;
+        .app-frame {
+          border-radius: var(--panel-roundness);
+          border: 0;
+          width: 100%;
+          height: 510px;
         }
     </style>
 
 </head>
 <body>
     <!-- 스타일 적용된 섹션 추가 -->
-    <section id="mywidget" class="home-section wg-myWidget">
+    <section id="myWidget" class="home-section wg-myWidget">
         <div id="root"></div>
     </section>
 </body>

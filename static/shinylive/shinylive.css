@@ -665,6 +665,8 @@ div#size-detection-cell {
 .app-frame {
   border-radius: var(--panel-roundness);
   border: 0;
+  height: 100%;
+  width: 100%;
 }
 .shinylive-viewer iframe {
   background-color: white;

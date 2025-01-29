@@ -7,7 +7,7 @@ widget: pages
 headless: True
 
 # Order that this section appears on the page.
-weight: 60
+weight: 20
 
 title: 최근 게시물
 subtitle: Recent Posts
