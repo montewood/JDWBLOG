@@ -34,11 +34,19 @@
 
     <!-- 추가된 스타일 적용 -->
     <style>
-        .app-frame {
-          border-radius: var(--panel-roundness);
-          border: 0;
-          width: 100%;
-          height: 510px;
+        #myWidget {
+            width: 100%;
+            height: 80vh; /* #root와 동일하게 조정 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #root {
+            border-radius: var(--panel-roundness, 10px); /* ✅ 기본값 설정 */
+            border: 0;
+            width: 100%;
+            height: 80vh;
         }
     </style>
 
