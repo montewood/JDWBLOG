@@ -1,5 +1,5 @@
 ---
-bio: "Professionalism"
+bio: "牛步萬里"
 education:
   courses:
   - course: Master in ICT Convergence
@@ -23,7 +23,7 @@ organizations:
   url: http://interxlab.com/
 - name: UNIST
   url: https://www.unist.ac.kr/?go=main
-role: Data Analyst<br>UNIST M.S. Student
+role: Data Analyst | UNIST M.S. Student 
 social:
 - icon: github
   icon_pack: fab

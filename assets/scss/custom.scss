@@ -10771,6 +10771,17 @@ h6 {
 
 /* 커스텀 코드, 2025-01-29 수정 */
 
+/* main -> shinyapp  */
 #about {
     padding-bottom: 0px !important;
 }
+
+/* post -> 하단 이미지 */
+
+/* 포스트 하단의 author-card에서만 아바타 크기 변경 */
+.author-card .avatar {
+    width: 96.28px !important;
+    height: 96.28px !important;
+}
+
+
