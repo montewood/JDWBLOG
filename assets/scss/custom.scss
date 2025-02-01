@@ -10776,12 +10776,21 @@ h6 {
     padding-bottom: 0px !important;
 }
 
-/* post -> 하단 이미지 */
-
-/* 포스트 하단의 author-card에서만 아바타 크기 변경 */
+/* post -> avatar 이미지 */
 .author-card .avatar {
-    width: 96.28px !important;
-    height: 96.28px !important;
+    width: 111px !important;
+    height: 111px !important;
+}
+
+/* post -> avatar 텍스트  */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+
+.author-card .card-text {
+    font-family: 'Noto Sans SC', sans-serif !important;
+    font-size: 20px !important; /* 폰트 크기 조정 */
+    font-weight: 700; /* 가독성을 위해 굵기 조정 (선택) */
+    line-height: 1.5; /* 줄 간격 조정 (선택) */
+    margin-bottom: 0px;
 }
 
 
