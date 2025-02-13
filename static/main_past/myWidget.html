@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shiny App with Shinylive</title>
+
+    <!-- Service Worker 등록 -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('./shinylive-sw.js')  // ✅ 올바른 경로로 수정
+          .then(function(registration) {
+            console.log('Shinylive Service Worker registered:', registration.scope);
+          })
+          .catch(function(error) {
+            console.log('Service Worker registration failed:', error);
+          });
+      }
+    </script>
+
+    <!-- Shinylive 스크립트 로드 -->
+    <script type="module">
+        import { runExportedApp } from "./shinylive/shinylive.js";  // ✅ Shinylive 앱 실행
+        runExportedApp({
+            id: "root",
+            appEngine: "r",
+            relPath: "/shinylive",
+        });
+    </script>
+
+    <!-- 스타일 시트 -->
+    <link rel="stylesheet" href="./shinylive/style-resets.css">
+    <link rel="stylesheet" href="./shinylive/shinylive.css">
+
+    <!-- 추가된 스타일 적용 -->
+    <style>
+        #myWidget {
+            width: 100%;
+            height: 80vh; /* #root와 동일하게 조정 */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px;
+        }
+
+        #root {
+            border-radius: var(--panel-roundness, 10px); /* ✅ 기본값 설정 */
+            border: 0;
+            width: 100%;
+            height: 80vh;
+            padding-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 스타일 적용된 섹션 추가 -->
+    <section id="myWidget" class="home-section wg-myWidget">
+        <div id="root"></div>
+    </section>
+</body>
+</html>
