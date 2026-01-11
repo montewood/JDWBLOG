@@ -4,7 +4,7 @@ education:
   courses:
   - course: Master in ICT Convergence
     institution: UNIST
-    year: Student
+    year: 2025
 #   - course: MEng in Artificial Intelligence
 #     institution: Massachusetts Institute of Technology
 #     year: 2009
@@ -15,16 +15,19 @@ email: "jdwnovember@gmail.com"
 highlight_name: true
 interests:
 - R+Python
+- Cloud Engineering 
 - DeepLearning (Pytorch)
-- Time-Series Anomaly Detection
 - Data Product
 organizations:
 - name: INTERX
   url: http://interxlab.com/
 - name: UNIST
   url: https://www.unist.ac.kr/?go=main
-role: Data Analyst<br>UNIST M.S. Student 
+role: Engineering-Focused<br>Data Analyst
 social:
+- icon: linkedin
+  icon_pack: fab
+  link: www.linkedin.com/in/dongwoo-jeong-603540230
 - icon: github
   icon_pack: fab
   link: https://github.com/montewood
@@ -34,9 +37,6 @@ social:
 - icon: rss
   icon_pack: fas
   link: https://www.jdwblog.com/post/index.xml
-# - icon: linkedin
-#   icon_pack: fab
-#   link: https://www.linkedin.com/
 # - display:
 #     header: true
 #   icon: twitter
