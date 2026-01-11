@@ -27,7 +27,7 @@ role: Engineering-Focused<br>Data Analyst
 social:
 - icon: linkedin
   icon_pack: fab
-  link: www.linkedin.com/in/dongwoo-jeong-603540230
+  link: https://www.linkedin.com/in/dongwoo-jeong-603540230
 - icon: github
   icon_pack: fab
   link: https://github.com/montewood
