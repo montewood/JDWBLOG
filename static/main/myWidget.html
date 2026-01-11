@@ -34,22 +34,33 @@
 
     <!-- 추가된 스타일 적용 -->
     <style>
-        #myWidget {
-            width: 100%;
-            height: 80vh; /* #root와 동일하게 조정 */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-        }
 
-        #root {
-            border-radius: var(--panel-roundness, 10px); /* ✅ 기본값 설정 */
-            border: 0;
-            width: 100%;
-            height: 80vh;
-            padding-top: 20px;
-        }
+      /* myWidget.html에서는 전체사이즈로 출력, 실질적 iframe조절은 about.html에서 수행 */
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        overflow: hidden; /* 핵심: body 스크롤 자체 차단 */
+      }
+
+      #myWidget {
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        display: block;
+      }
+
+      #root {
+        width: 100%;
+        height: 100%;
+        min-height: 0;
+        overflow: hidden;
+      }
+
+
     </style>
 
 </head>
