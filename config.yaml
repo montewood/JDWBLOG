@@ -28,6 +28,7 @@ ignoreFiles:
   - "\\.Rmarkdown$"
   - "_cache$"
   - "\\.qmd$"
+  - "\\.py$"
   - "\\.woff2$"
   - "\\.woff$"
   - "\\.ttf$"
