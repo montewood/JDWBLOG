@@ -1,0 +1,46 @@
+schema: hugoblox/author/v1
+slug: jdw
+is_owner: true
+name:
+  display: JDW
+  given: Dongwoo
+  family: Jeong
+role: Engineering-Focused Data Analyst
+bio: |
+  牛步萬里. R과 Python을 활용한 데이터 분석, 클라우드 엔지니어링,
+  딥러닝과 데이터 제품을 공부하고 기록합니다.
+affiliations:
+  - name: INTERX
+    url: https://interxlab.com/
+  - name: UNIST
+    url: https://www.unist.ac.kr/
+links:
+  - icon: at-symbol
+    url: mailto:jdwnovember@gmail.com
+    label: Email
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/dongwoo-jeong-603540230
+  - icon: brands/github
+    url: https://github.com/montewood
+  - icon: rss
+    url: /post/index.xml
+interests:
+  - R + Python
+  - Cloud Engineering
+  - Deep Learning (PyTorch)
+  - Data Products
+education:
+  - degree: Master in ICT Convergence
+    institution: UNIST
+    end: 2025-12-31
+skills:
+  - name: Data & Engineering
+    items:
+      - label: R
+        level: 5
+      - label: Python
+        level: 5
+      - label: Cloud Engineering
+        level: 4
+      - label: PyTorch
+        level: 4

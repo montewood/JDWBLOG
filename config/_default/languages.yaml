@@ -1,22 +1,5 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://wowchemy.com/docs/guide/language/
-
-# Default language
 ko:
-  languageCode: ko
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
-
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+  locale: ko-KR
+  title: JDW Blog
+  params:
+    description: R, Python, 클라우드와 데이터 제품에 관한 기술 블로그

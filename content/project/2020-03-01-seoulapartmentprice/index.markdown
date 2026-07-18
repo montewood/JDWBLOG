@@ -9,8 +9,10 @@ tags:
   - 시각화
 subtitle: ''
 summary: '국토교통부에서 제공하는 "서울시 아파트 실거래가" 데이터 매핑 및 기간별 요약정보 시각화 <br> (2010년 ~ 2019년)'
-authors: []
-external_link: 'https://montewood.shinyapps.io/seoulapartmentprice/'
+authors: [jdw]
+links:
+  - type: site
+    url: 'https://montewood.shinyapps.io/seoulapartmentprice/'
 lastmod: '2020-03-01T18:26:37+09:00'
 featured: no
 image:

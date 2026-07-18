@@ -56,11 +56,8 @@ UBUNTU_CODENAME=jammy
 
 <br>
 
-{{% callout note %}}
-
-본격적으로 들어가기에 앞서 본 포스팅은 해당 [**github repository**](https://github.com/naru-T/RstudioServer_on_Colab)를 활용하여 작성되었음을 알립니다. 
-
-{{% /callout %}}
+> [!NOTE]
+> 본격적으로 들어가기에 앞서 본 포스팅은 해당 [**github repository**](https://github.com/naru-T/RstudioServer_on_Colab)를 활용하여 작성되었음을 알립니다.
 
 
 # Rstudio-server 설치 

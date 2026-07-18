@@ -28,8 +28,7 @@ menu:
 
 # Introduction
 
-![](/img/1_XI3beonBnOwp-y5BwNOqCw.gif)
-Picture Credit: <https://miro.medium.com>
+Picture credit and original animation: <https://miro.medium.com>
 
 <b> Nearal Style Transfer </b>
 
@@ -232,7 +231,7 @@ def get_features(image, model, layers = None):
 
 # 3. Gram Matrix
 
-![](/img/gram_matrix.gif "caption_text")
+The original Gram matrix animation is no longer available in the legacy assets.
 Picture Credit: <https://miro.medium.com>
 
 > The matrix expressing the correlation of this Channel is called Gram Matrix. Loss is minimized by definding the difference between this Gram Matrix and the Gram Matrix of the newly created image as a Loss Function. Next, in order to reflect the content, the loss function is calculated in units of pixels from the feature map spit out from each pre-trained CNN. In this way, a new image is created that minimizes the Loss calculated from Style and Loss calculated from Content.

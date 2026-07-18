@@ -1,18 +1,16 @@
-# Navigation Links
-#   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
-#     desired widget in your `content/home/` folder.
-#   The weight parameter defines the order that the links will appear in.
-
 main:
- - name: Main
-   url: '/#Main'
-   weight: 10
- - name: Posts
-   url: '/#Posts'
-   weight: 20
- - name: Study-Note
-   url: './courses'
-   weight: 30
- # - name: Test
- #   url: './test'
- #   weight: 30
+  - name: 소개
+    url: /#about
+    weight: 10
+  - name: 최근 글
+    url: /#posts
+    weight: 20
+  - name: 프로젝트
+    url: /#projects
+    weight: 30
+  - name: Study Notes
+    url: /courses/
+    weight: 40
+  - name: 글 전체
+    url: /post/
+    weight: 50

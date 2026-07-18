@@ -1,0 +1,38 @@
+{{/* Reusable isolated static-app embed. The app remains independent of HugoBlox. */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $content := $block.content | default dict }}
+{{ $title := $content.title | default "" }}
+{{ $text := $content.text | default "" }}
+{{ $appURL := $content.app_url | default "" }}
+{{ $appTitle := $content.app_title | default "Interactive application" }}
+{{ $height := $content.height | default 500 }}
+{{ $loading := $content.loading | default "lazy" }}
+
+<div class="mx-auto flex w-full max-w-6xl flex-col gap-6 px-6">
+  {{ with $title }}
+    <h2 class="text-center text-3xl font-bold text-gray-900 dark:text-white">
+      {{ . | emojify | $page.RenderString }}
+    </h2>
+  {{ end }}
+  {{ with $text }}
+    <div class="prose prose-slate mx-auto text-center dark:prose-invert">
+      {{ . | emojify | $page.RenderString }}
+    </div>
+  {{ end }}
+  {{ if $appURL }}
+    <div class="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700">
+      <iframe
+        src="{{ $appURL | safeURL }}"
+        title="{{ $appTitle }}"
+        loading="{{ $loading }}"
+        width="100%"
+        height="{{ $height }}"
+        class="block w-full border-0"
+        sandbox="allow-downloads allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
+      ></iframe>
+    </div>
+  {{ else }}
+    {{ warnf "embedded-app block requires content.app_url" }}
+  {{ end }}
+</div>

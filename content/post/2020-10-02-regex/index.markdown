@@ -26,88 +26,88 @@ output:
     toc_depth: 3
 ---
 
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/kePrint/kePrint.js"></script>
-<link href="{{< blogdown/postref >}}index_files/lightable/lightable.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
-<script src="{{< blogdown/postref >}}index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="{{< blogdown/postref >}}index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="{{< blogdown/postref >}}index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/kePrint/kePrint.js"></script>
+<link href="index_files/lightable/lightable.css" rel="stylesheet" />
+<script src="index_files/kePrint/kePrint.js"></script>
+<link href="index_files/lightable/lightable.css" rel="stylesheet" />
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
+<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
+<link href="index_files/str_view/str_view.css" rel="stylesheet" />
+<script src="index_files/str_view-binding/str_view.js"></script>
 
 ![](images/regular-expression.gif)
 
@@ -759,9 +759,8 @@ see(“［:blank:］”)
 </tbody>
 </table>
 
-{{% callout note %}}
-참고로 위의 표에서 사용된 일부 역슬래시와 대괄호는 출력상의 이유로 인해 일반적으로 사용하는 문자가 아닌 특수문자로 대체하였습니다. 예시함수를 사용 할 때 혹시나 에러가 발생한다면 역슬래시와 대괄호를 원래 키로 수정하여 사용하시기 바랍니다.
-{{% /callout %}}
+> [!NOTE]
+> 참고로 위의 표에서 사용된 일부 역슬래시와 대괄호는 출력상의 이유로 인해 일반적으로 사용하는 문자가 아닌 특수문자로 대체하였습니다. 예시함수를 사용 할 때 혹시나 에러가 발생한다면 역슬래시와 대괄호를 원래 키로 수정하여 사용하시기 바랍니다.
 
 ### 위치 탐색자
 

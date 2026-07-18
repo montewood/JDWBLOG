@@ -1,0 +1,100 @@
+---
+title: Hello, Quarto
+date: "2026-01-18"
+categories:
+  - Matplotlib
+  - Coordinates
+format: hugo-md
+---
+
+```{r}
+#| label: setup
+#| include: false
+
+set.seed(20260118)
+```
+
+> Quarto format(`.qmd`)을 통한 블로그 포스팅이 가능한지 여부 파악
+> 기존 `.Rmd`, `.Rmarkdown` 포맷으로만 가능하다고 생각했던 블로그 포스팅에 `.qmd`를 통해서도 가능한지 여부 테스트 진행
+
+
+# Code test
+
+## R
+
+### plotly(Gapminder)
+
+```{r}
+#| eval: True
+#| warning: false
+#| message: false
+
+library(gapminder)
+library(ggplot2)
+library(plotly)
+
+g <- gapminder %>%
+  filter(year == 2007) %>%
+  ggplot(aes(x = gdpPercap, y = lifeExp, color = continent, size = pop, ids = country)) +
+  geom_point(alpha = 0.5) +
+  ggtitle("Life expectancy versus GDP, 2007") +
+  xlab("GDP per capita (US$)") +
+  ylab("Life expectancy (years)") +
+  scale_color_discrete(name = "Continent") +
+  scale_size_continuous(name = "Population") +
+  theme_bw()
+
+ggplotly(g)
+```
+
+
+### leaflet
+
+```{r}
+library(leaflet)
+leaflet() %>%
+  addTiles() %>%  # Add default OpenStreetMap map tiles
+  addMarkers(lng=174.768, lat=-36.852, popup="The birthplace of R")
+```
+
+
+## Python
+
+### matplotlib(Polar Axis)
+
+For a demonstration of a line plot on a polar axis
+
+```{python}
+#| label: fig-polar
+#| fig-cap: "A line plot on a polar axis"
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+r = np.arange(0, 2, 0.01)
+theta = 2 * np.pi * r
+fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+ax.plot(theta, r)
+ax.set_rticks([0.5, 1, 1.5, 2])
+ax.grid(True)
+plt.show()
+```
+
+
+### Leaflet Figure
+
+```{python}
+#| eval: true
+
+from ipyleaflet import Map, Marker, basemaps, basemap_to_tiles
+m = Map(
+  basemap=basemap_to_tiles(
+    basemaps.NASAGIBS.ModisTerraTrueColorCR, "2017-04-08"
+  ),
+  center=(52.204793, 360.121558),
+  zoom=4
+)
+m.add_layer(Marker(location=(52.204793, 360.121558)))
+
+print(m)
+```

@@ -39,9 +39,6 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 
-# pkgdown site
-docs/
-
 # translation temp files
 po/*~
 
@@ -51,10 +48,11 @@ rsconnect/
 # Ignore data folders
 /content/courses/*/*/data
 
-# Excluding Original files
-*.Rmd
-*.Rmarkdown
-*.qmd
+# Quarto and R Markdown sources are versioned as the source of truth.
+# Ignore only transient render state.
+.quarto/
+/.cache/
+**/.jupyter_cache/
 
 
 .Rproj.user
@@ -65,3 +63,10 @@ rsconnect/
 Thumbs.db
 *.Rproj
 /content/test
+/public/
+/resources/_gen/
+/node_modules/
+/.hugo_build.lock
+/hugo_stats.json
+/assets/jsconfig.json
+*.Zone.Identifier
