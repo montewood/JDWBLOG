@@ -1,0 +1,29 @@
+{{ $item := .item }}
+{{ $image := partial "functions/get_featured_image.html" $item }}
+{{ $summary := partial "functions/get_summary" $item | plainify | htmlUnescape | truncate 190 }}
+{{ $authorName := "" }}
+{{ with $item.Params.authors }}
+  {{ $profile := partial "functions/get_author_profile" (index . 0) }}
+  {{ $authorName = $profile.title }}
+{{ end }}
+
+<article class="jdw-post-list__item">
+  <div class="jdw-post-list__body">
+    <h3><a href="{{ $item.RelPermalink }}">{{ $item.Title }}</a></h3>
+    <p class="jdw-post-list__summary">{{ $summary }}</p>
+    <div class="jdw-post-list__meta">
+      <time datetime="{{ time.Format "2006-01-02" $item.Date }}">
+        {{ time.Format (site.Params.hugoblox.locale.date_format | default "2006-01-02") $item.Date }}
+      </time>
+      {{ with $authorName }}<span>{{ . }}</span>{{ end }}
+      {{ with $item.ReadingTime }}<span>{{ . }}분 읽기</span>{{ end }}
+    </div>
+  </div>
+
+  {{ with $image }}
+    {{ $thumb := .Fill "320x240 Center webp" }}
+    <a class="jdw-post-list__image" href="{{ $item.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ $thumb.RelPermalink }}" width="160" height="120" loading="lazy" alt="">
+    </a>
+  {{ end }}
+</article>

@@ -11,17 +11,15 @@ hugoblox:
 
   theme:
     mode: system
-    pack: default
+    pack: jdw
     colors:
-      primary: "#1565c0"
-      secondary: "#42a5f5"
       neutral: slate
 
   typography:
-    pack: academic
+    pack: jdw
 
   layout:
-    radius: lg
+    radius: md
     spacing: spacious
     avatar_shape: circle
 

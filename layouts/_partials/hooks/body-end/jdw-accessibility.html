@@ -1,0 +1,13 @@
+<script>
+  (() => {
+    const makeLegacyCodeFocusable = () => {
+      document.querySelectorAll('pre.highlight:not([tabindex]), .prose table:not([tabindex])').forEach((region) => {
+        region.setAttribute('tabindex', '0');
+      });
+    };
+
+    makeLegacyCodeFocusable();
+    document.addEventListener('DOMContentLoaded', makeLegacyCodeFocusable, { once: true });
+    window.addEventListener('load', makeLegacyCodeFocusable, { once: true });
+  })();
+</script>

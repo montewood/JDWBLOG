@@ -1,7 +1,7 @@
 ---
 date: '2024-01-07'
 title: "Transfering Style!"
-author: JDW
+authors: [jdw]
 type: book
 weight: 20
 output:

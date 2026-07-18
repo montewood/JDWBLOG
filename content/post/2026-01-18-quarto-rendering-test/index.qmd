@@ -1,6 +1,8 @@
 ---
 title: Hello, Quarto
 date: "2026-01-18"
+authors:
+  - jdw
 categories:
   - Matplotlib
   - Coordinates

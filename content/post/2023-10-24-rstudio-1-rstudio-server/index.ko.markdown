@@ -1,6 +1,6 @@
 ---
 title: 코랩에서 Rstudio 사용하기 1. Rstudio-server 설치하기
-author: JDW
+authors: [jdw]
 date: '2023-10-24'
 categories:
   - R

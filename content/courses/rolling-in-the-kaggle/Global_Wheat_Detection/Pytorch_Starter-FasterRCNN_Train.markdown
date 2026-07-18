@@ -1,7 +1,7 @@
 ---
 date: "2024-03-30"
 title: Pytorch_Starter-FasterRCNN_Train
-author: JDW
+authors: [jdw]
 type: book
 weight: 20
 output: md_document

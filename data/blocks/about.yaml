@@ -1,0 +1,11 @@
+block: jdw-about
+id: about
+content:
+  username: jdw
+  app_url: /apps/profile-widget/
+  app_title: JDW Blog visitor dashboard
+  app_height: 500
+design:
+  css_class: jdw-section
+  spacing:
+    padding: ["6rem", 0, "1.5rem", 0]

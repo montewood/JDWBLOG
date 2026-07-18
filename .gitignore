@@ -69,4 +69,6 @@ Thumbs.db
 /.hugo_build.lock
 /hugo_stats.json
 /assets/jsconfig.json
+/test-results/
+/playwright-report/
 *.Zone.Identifier

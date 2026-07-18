@@ -1,0 +1,18 @@
+block: content-collection
+id: posts
+content:
+  title: 최근 게시물
+  text: R, Python, 클라우드와 데이터 제품에 관한 기록
+  count: 3
+  filters:
+    folders:
+      - post
+  archive:
+    enable: true
+    text: 포스트 더 보기
+    link: /post/
+design:
+  view: jdw-post-list
+  css_class: jdw-section--alt
+  spacing:
+    padding: ["6rem", 0, "6rem", 0]

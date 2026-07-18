@@ -1,7 +1,7 @@
 ---
 date: '2024-01-02'
 title: "🎨 Artistic AI: Style Transfer 🌌"
-author: JDW
+authors: [jdw]
 type: book
 weight: 10
 output:

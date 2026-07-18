@@ -34,6 +34,8 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: scripts/validate-site.sh
       - run: pnpm run pagefind
+      - run: pnpm exec playwright install --with-deps chromium
+      - run: pnpm run check:visual
 
   quarto-drift:
     runs-on: ubuntu-latest

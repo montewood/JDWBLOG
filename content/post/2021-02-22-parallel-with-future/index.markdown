@@ -1,6 +1,5 @@
 ---
 title: '[R] 더욱 빠른 연산을 위한 병렬처리(With future Package)'
-author: JDW
 date: '2021-02-22'
 slug: parallel-with-future
 categories:
@@ -15,7 +14,7 @@ tags:
   - 속도
 subtitle: ''
 summary: ''
-authors: []
+authors: [jdw]
 lastmod: '2021-02-22T18:34:01+09:00'
 featured: no
 image:

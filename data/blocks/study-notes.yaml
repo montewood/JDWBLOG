@@ -1,0 +1,13 @@
+block: cta-button-list
+id: study-notes
+content:
+  title: Study Notes
+  text: Kaggle과 딥러닝 학습 기록을 살펴보세요.
+  buttons:
+    - text: Study Notes 보기
+      url: /courses/
+      icon: hero/book-open
+design:
+  css_class: jdw-section--alt
+  spacing:
+    padding: ["4.5rem", 0, "5rem", 0]

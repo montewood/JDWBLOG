@@ -1,6 +1,5 @@
 ---
 title: 텍스트 분석을 통한 프로듀스X101 데뷔조 예측
-author: JDW
 date: '2019-12-19'
 slug: producex
 categories: []

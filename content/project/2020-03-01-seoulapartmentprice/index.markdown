@@ -1,6 +1,5 @@
 ---
 title: '[Shiny] 서울시 아파트 실거래 정보 웹 어플리케이션'
-author: JDW
 date: '2020-03-01'
 slug: SeoulApartmentPrice
 categories: []

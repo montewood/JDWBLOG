@@ -1,7 +1,7 @@
 ---
 date: '2023-12-02'
 title: "[Pytorch] Supervised Contrastive Learning 🔥"
-author: JDW
+authors: [jdw]
 type: book
 weight: 20
 output: 

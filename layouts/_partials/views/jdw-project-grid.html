@@ -1,0 +1,34 @@
+{{ $item := .item }}
+{{ $image := partial "functions/get_featured_image.html" $item }}
+{{ $summary := partial "functions/get_summary" $item | plainify | htmlUnescape | truncate 125 }}
+{{ $link := $item.RelPermalink }}
+{{ $external := false }}
+{{ with $item.Params.links }}
+  {{ $primaryLink := index . 0 }}
+  {{ with $primaryLink.url }}
+    {{ $link = . }}
+    {{ $external = hasPrefix . "http" }}
+  {{ end }}
+{{ end }}
+
+<article class="jdw-project-card">
+  <a class="jdw-project-card__link" href="{{ $link }}" {{ if $external }}target="_blank" rel="noopener"{{ end }}>
+    <div class="jdw-project-card__media">
+      {{ with $image }}
+        {{ $thumb := .Fill "720x480 Center webp" }}
+        <img src="{{ $thumb.RelPermalink }}" width="360" height="240" loading="lazy" alt="">
+      {{ else }}
+        <div class="jdw-project-card__fallback" aria-hidden="true"></div>
+      {{ end }}
+    </div>
+    <div class="jdw-project-card__content">
+      <h3>{{ $item.Title }}</h3>
+      {{ with $summary }}<p>{{ . }}</p>{{ end }}
+      {{ with $item.Params.tags }}
+        <ul aria-label="태그">
+          {{ range first 3 . }}<li>{{ . }}</li>{{ end }}
+        </ul>
+      {{ end }}
+    </div>
+  </a>
+</article>

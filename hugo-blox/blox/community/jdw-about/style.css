@@ -1,0 +1,154 @@
+.jdw-about {
+  display: grid;
+  grid-template-columns: minmax(13rem, 17rem) minmax(0, 1fr);
+  gap: clamp(2.25rem, 6vw, 5rem);
+  width: min(100% - 2rem, 67.5rem);
+  margin-inline: auto;
+  align-items: start;
+}
+
+.jdw-about__identity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.jdw-about__avatar {
+  width: clamp(12.5rem, 20vw, 16.875rem);
+  aspect-ratio: 1;
+  border-radius: 9999px;
+  object-fit: cover;
+  box-shadow: 0 1rem 2.5rem rgb(15 23 42 / 12%);
+}
+
+.jdw-about__name {
+  margin-top: 1.2rem;
+  margin-bottom: 0;
+  font-size: clamp(1.75rem, 3vw, 2.35rem);
+}
+
+.jdw-about__role {
+  margin-top: 0.45rem;
+  color: color-mix(in srgb, var(--jdw-text) 72%, transparent);
+  font-size: 0.98rem;
+  line-height: 1.5;
+}
+
+.jdw-about__affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem 0.65rem;
+  margin-top: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.jdw-about__affiliations a {
+  color: var(--jdw-primary);
+}
+
+.jdw-about__social {
+  display: flex;
+  gap: 0.72rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.jdw-about__social a {
+  display: grid;
+  width: 1.55rem;
+  height: 1.55rem;
+  place-items: center;
+  color: var(--jdw-primary);
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.jdw-about__social a:hover {
+  color: var(--jdw-primary-active);
+  transform: translateY(-2px);
+}
+
+.jdw-about__social svg {
+  width: 100%;
+  height: 100%;
+}
+
+.jdw-about__details {
+  min-width: 0;
+}
+
+.jdw-about__bio {
+  max-width: 48rem;
+  font-weight: 700;
+  line-height: 1.65;
+}
+
+.jdw-about__facts {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(1.5rem, 4vw, 3.5rem);
+  margin-top: 2rem;
+}
+
+.jdw-about__facts h2 {
+  margin: 0 0 0.8rem;
+  font-size: 1.05rem;
+}
+
+.jdw-about__facts ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.jdw-about__facts li + li {
+  margin-top: 0.4rem;
+}
+
+.jdw-about__education {
+  list-style: none;
+  padding-left: 0 !important;
+}
+
+.jdw-about__education li {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+}
+
+.jdw-about__education span {
+  color: color-mix(in srgb, var(--jdw-text) 65%, transparent);
+  font-size: 0.9rem;
+}
+
+.jdw-about__app {
+  margin-top: 2.25rem;
+  overflow: hidden;
+  border: 1px solid rgb(148 163 184 / 25%);
+  border-radius: 0.35rem;
+  background: #ffffff;
+  box-shadow: 0 0.45rem 1.5rem rgb(15 23 42 / 8%);
+}
+
+.jdw-about__app iframe {
+  display: block;
+  width: 100%;
+  border: 0;
+}
+
+@media (max-width: 767px) {
+  .jdw-about {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .jdw-about__facts {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+  }
+
+  .jdw-about__app iframe {
+    min-height: 31rem;
+  }
+}

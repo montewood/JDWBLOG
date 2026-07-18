@@ -1,6 +1,5 @@
 ---
 title: 'Digesting Deep Learning'
-author: JDW
 date: '2023-11-23'
 slug: DeepNote
 categories: []

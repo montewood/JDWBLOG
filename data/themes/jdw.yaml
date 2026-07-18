@@ -1,0 +1,37 @@
+hugoblox:
+  meta:
+    format: "hugoblox-theme@1"
+    name: "JDW"
+    vendor: "jdwblog"
+    version: "1.0.0"
+    license: "MIT"
+
+  type: "dual"
+
+  light:
+    colors:
+      primary: "#1565c0"
+      secondary: "#42a5f5"
+    surfaces:
+      background: "#ffffff"
+      foreground: "#2b2b2b"
+      header:
+        background: "#ffffff"
+        foreground: "#34495e"
+      footer:
+        background: "#ffffff"
+        foreground: "#34495e"
+
+  dark:
+    colors:
+      primary: "#90caf9"
+      secondary: "#42a5f5"
+    surfaces:
+      background: "#23252f"
+      foreground: "#f8fafc"
+      header:
+        background: "#23252f"
+        foreground: "#f8fafc"
+      footer:
+        background: "#272935"
+        foreground: "#e5e7eb"

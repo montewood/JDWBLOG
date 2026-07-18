@@ -1,6 +1,5 @@
 ---
 title: '[R] 정규표현식 활용한 텍스트 데이터 다루기'
-author: JDW
 date: '2020-10-02'
 slug: regex
 categories:
@@ -12,7 +11,7 @@ tags:
   - 정규표현식
 subtitle: ''
 summary: ''
-authors: []
+authors: [jdw]
 lastmod: '2020-10-02T14:00:32+09:00'
 featured: no
 image:

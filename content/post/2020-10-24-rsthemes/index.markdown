@@ -1,6 +1,5 @@
 ---
 title: '[R] Rstudio의 테마를 변경해 사용하기(With rsthemes Package)'
-author: JDW
 date: '2020-10-24'
 slug: rsthemes
 categories:
@@ -11,7 +10,7 @@ tags:
   - rsthemes
 subtitle: ''
 summary: ''
-authors: []
+authors: [jdw]
 lastmod: '2020-10-24T17:58:08+09:00'
 featured: no
 image:

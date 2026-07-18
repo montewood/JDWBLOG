@@ -1,6 +1,5 @@
 ---
 title: '[R] stringr 패키지를 사용한 정규표현식'
-author: JDW
 date: '2020-10-03'
 slug: regexwithstringr
 categories:
@@ -13,7 +12,7 @@ tags:
   - stringr
 subtitle: ''
 summary: ''
-authors: []
+authors: [jdw]
 lastmod: '2020-10-03T17:53:43+09:00'
 featured: no
 image:

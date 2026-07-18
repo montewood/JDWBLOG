@@ -1,7 +1,7 @@
 ---
 date: '2023-11-27'
 title: 🚀0.80032|Spaceship Titanic with a FCNN in PyTorch
-author: JDW
+authors: [jdw]
 type: book
 weight: 10
 output: md_document

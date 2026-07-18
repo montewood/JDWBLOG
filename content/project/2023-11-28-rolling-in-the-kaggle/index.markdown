@@ -1,6 +1,5 @@
 ---
 title: Rolling in the Kaggle
-author: JDW
 date: '2023-11-28'
 slug: rolling-in-the-kaggle
 categories:

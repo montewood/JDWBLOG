@@ -1,0 +1,13 @@
+block: content-collection
+id: projects
+content:
+  title: Project
+  count: 6
+  filters:
+    folders:
+      - project
+design:
+  view: jdw-project-grid
+  css_class: jdw-section
+  spacing:
+    padding: ["6rem", 0, "6rem", 0]

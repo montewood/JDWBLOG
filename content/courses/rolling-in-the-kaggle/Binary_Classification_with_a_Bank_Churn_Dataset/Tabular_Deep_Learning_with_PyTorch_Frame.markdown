@@ -1,7 +1,7 @@
 ---
 date: '2024-01-11'
 title: "📈Tabular Deep Learning with PyTorch Frame"
-author: JDW
+authors: [jdw]
 type: book
 weight: 10
 output: 

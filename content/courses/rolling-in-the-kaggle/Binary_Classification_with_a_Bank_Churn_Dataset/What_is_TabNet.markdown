@@ -1,7 +1,7 @@
 ---
 date: '2024-01-11'
 title: "🎁What is TabNet?| 📈TabNet & ensemble EN"
-author: JDW
+authors: [jdw]
 type: book
 weight: 20
 output: 

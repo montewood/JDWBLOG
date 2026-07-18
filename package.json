@@ -6,6 +6,8 @@
     "build": "hugo --gc --minify && pnpm run pagefind",
     "check": "bash scripts/validate-site.sh",
     "check:quarto": "bash scripts/check-quarto-drift.sh",
+    "check:visual": "playwright test",
+    "check:visual:update": "playwright test --update-snapshots",
     "pagefind": "pagefind --site public"
   },
   "dependencies": {
@@ -17,5 +19,9 @@
   },
   "version": "1.0.0",
   "packageManager": "pnpm@10.14.0",
-  "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4"
+  "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
+  "devDependencies": {
+    "@axe-core/playwright": "^4.12.1",
+    "@playwright/test": "^1.61.1"
+  }
 }
