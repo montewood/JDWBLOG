@@ -11,7 +11,6 @@ legacy comparison is needed:
 - `/post/`
 - `/post/regex/`
 - `/project/`
-- `/courses/`
 
 The executable current snapshots are generated beside
 `design-system.spec.ts` with:

@@ -34,7 +34,7 @@ scripts/check-quarto-drift.sh
 On the Netlify Deploy Preview, verify:
 
 1. Homepage profile, recent posts, projects, dark mode, search, and mobile layout.
-2. Existing `/post/` and `/courses/` URLs, RSS, sitemap, canonical, and Open Graph tags.
+2. Existing `/post/` URLs, RSS, sitemap, canonical, and Open Graph tags.
 3. Plotly/Leaflet content and the Shinylive app under `/apps/profile-widget/`.
 4. Browser console has no service-worker, COOP, COEP, or missing-asset errors.
 5. Google Tag Manager fires once with container `GTM-P8STCFM`.

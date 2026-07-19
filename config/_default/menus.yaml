@@ -1,16 +1,10 @@
 main:
-  - name: 소개
+  - name: Main
     url: /#about
     weight: 10
-  - name: 최근 글
+  - name: Posts
     url: /#posts
     weight: 20
-  - name: 프로젝트
+  - name: Project
     url: /#projects
     weight: 30
-  - name: Study Notes
-    url: /courses/
-    weight: 40
-  - name: 글 전체
-    url: /post/
-    weight: 50

@@ -46,7 +46,6 @@ po/*~
 rsconnect/
 
 # Ignore data folders
-/content/courses/*/*/data
 
 # Quarto and R Markdown sources are versioned as the source of truth.
 # Ignore only transient render state.

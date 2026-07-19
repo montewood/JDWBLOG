@@ -6,7 +6,6 @@ const routes = [
   { name: 'posts', path: '/post/' },
   { name: 'post-regex', path: '/post/regex/' },
   { name: 'projects', path: '/project/' },
-  { name: 'study-notes', path: '/courses/' },
 ] as const;
 
 const viewports = [

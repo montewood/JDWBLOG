@@ -11,9 +11,6 @@ tags:
 subtitle: ''
 summary: '케글 연습장'
 authors: [jdw]
-links:
-  - type: site
-    url: '/courses/rolling-in-the-kaggle/'
 lastmod: '2023-11-28T06:17:24Z'
 featured: no
 image:

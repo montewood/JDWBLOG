@@ -2,7 +2,7 @@ hugoblox:
   schema: "2.0"
 
   identity:
-    name: "JDW"
+    name: "JDW BLOG"
     organization: ""
     type: person
     tagline: "Engineering-Focused Data Analyst"
@@ -41,7 +41,7 @@ hugoblox:
     text: ""
 
   copyright:
-    notice: "© {year} {name}. This work is licensed under {license}"
+    notice: "© {year} JDW. This work is licensed under {license}"
     license:
       type: cc
       allow_derivatives: true

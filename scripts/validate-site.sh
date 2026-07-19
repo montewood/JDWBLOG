@@ -37,7 +37,6 @@ required_outputs=(
   public/post/parallel-with-future/index.html
   public/post/rstudio-1-rstudio-server/index.html
   public/post/2026-01-18-quarto-rendering-test/index.html
-  public/courses/index.html
   public/apps/profile-widget/index.html
   public/sitemap.xml
   public/robots.txt

@@ -64,6 +64,12 @@
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
 
+# Study Notes section was retired; preserve old inbound links.
+[[redirects]]
+  from = "/courses/*"
+  to = "/"
+  status = 301
+
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]

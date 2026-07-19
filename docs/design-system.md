@@ -66,19 +66,6 @@ content:
 Profile content is resolved from `data/authors/<username>.yaml`. The block does
 not contain Shiny code. It only embeds the independently exported static app.
 
-### `jdw-study-index`
-
-```yaml
-block: jdw-study-index
-content:
-  title: Study Notes
-  text: Introductory copy
-  section: courses
-```
-
-The block discovers child sections dynamically, so adding a new course series
-does not require editing the block template.
-
 ### `embedded-app`
 
 This remains available for standalone static applications. Prefer
@@ -122,8 +109,8 @@ links:
 
 ## Visual acceptance matrix
 
-The required routes are `/`, `/post/`, `/post/regex/`, `/project/`,
-`/courses/`, and `/apps/profile-widget/`.
+The required routes are `/`, `/post/`, `/post/regex/`, `/project/`, and
+`/apps/profile-widget/`.
 
 Each route is checked at 390×844, 768×1024, and 1440×1200 in light and dark
 mode. See `tests/visual/` for the executable specification.
