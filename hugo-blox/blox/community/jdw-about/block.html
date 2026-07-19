@@ -8,6 +8,11 @@
 {{ $appURL := $content.app_url | default "" }}
 {{ $appHeight := $content.app_height | default 500 }}
 {{ $appTitle := $content.app_title | default "JDW interactive visitor dashboard" }}
+{{ $dataURLTemplate := $content.data_url_template | default "https://raw.githubusercontent.com/montewood/gh-action/refs/heads/main/output/GA-DATE_KEY.json" }}
+{{ $defaultDays := $content.default_days | default 90 }}
+{{ $appButtonLabel := $content.app_button_label | default "대시보드 실행" }}
+{{ $dashboardTitle := $content.dashboard_title | default "About This Blog" }}
+{{ $launchEndpoint := $content.launch_endpoint | default "/api/dashboard-launch" }}
 
 <div class="jdw-about">
   <aside class="jdw-about__identity" aria-label="{{ $profile.title }} 프로필">
@@ -75,17 +80,109 @@
       {{ end }}
     </div>
 
-    {{ if $appURL }}
-      <div class="jdw-about__app">
-        <iframe
-          src="{{ $appURL | safeURL }}"
-          title="{{ $appTitle }}"
-          loading="lazy"
-          width="100%"
-          height="{{ $appHeight }}"
-          sandbox="allow-downloads allow-forms allow-modals allow-popups allow-same-origin allow-scripts"
-        ></iframe>
+    <section
+      class="jdw-about__dashboard"
+      data-jdw-dashboard
+      data-data-url-template="{{ $dataURLTemplate }}"
+      data-default-days="{{ $defaultDays }}"
+      data-app-url="{{ $appURL | safeURL }}"
+      data-app-title="{{ $appTitle }}"
+      data-launch-endpoint="{{ $launchEndpoint | safeURL }}"
+      data-app-button-label="{{ $appButtonLabel }}"
+      aria-labelledby="jdw-dashboard-title"
+    >
+      <div class="jdw-about__dashboard-heading">
+        <div>
+          <p class="jdw-about__eyebrow">Visitor analytics</p>
+          <h2 id="jdw-dashboard-title">{{ $dashboardTitle }}</h2>
+        </div>
+
+        <label class="jdw-about__range">
+          <span>조회 기간</span>
+          <select data-dashboard-range>
+            <option value="30">최근 30일</option>
+            <option value="90" {{ if eq (int $defaultDays) 90 }}selected{{ end }}>최근 90일</option>
+            <option value="365" {{ if eq (int $defaultDays) 365 }}selected{{ end }}>최근 12개월</option>
+          </select>
+        </label>
       </div>
-    {{ end }}
+
+      <div class="jdw-about__metrics" aria-label="방문자 분석 요약">
+        <div>
+          <span>최근일 Active Users</span>
+          <strong data-dashboard-latest>—</strong>
+        </div>
+        <div>
+          <span>기간 일평균</span>
+          <strong data-dashboard-average>—</strong>
+        </div>
+        <div>
+          <span>수집 일수</span>
+          <strong data-dashboard-coverage>—</strong>
+        </div>
+      </div>
+
+      <p class="jdw-about__dashboard-status" data-dashboard-status aria-live="polite">
+        일별 데이터를 준비하는 중
+      </p>
+
+      <div class="jdw-about__dashboard-layout">
+        <div
+          class="jdw-about__chart"
+          data-dashboard-chart
+          role="img"
+          aria-label="방문자 분석 차트를 불러오는 중"
+        ></div>
+
+        {{ if $appURL }}
+          <aside class="jdw-about__dashboard-actions" aria-label="Shinylive 대시보드 실행">
+            <button
+              type="button"
+              class="jdw-about__launch"
+              data-dashboard-open
+              disabled
+            >
+              <span data-dashboard-launch-label>{{ $appButtonLabel }}</span>
+              <span data-dashboard-quota>확인 중</span>
+            </button>
+            <p>클릭 시 Shinylive 웹 대시보드가 실행됩니다.</p>
+            <p class="jdw-about__quota-status" data-dashboard-quota-status aria-live="polite">
+              오늘의 실행 가능 횟수를 확인하고 있습니다.
+            </p>
+          </aside>
+        {{ end }}
+      </div>
+
+      {{ if $appURL }}
+        <dialog class="jdw-about__dialog" data-dashboard-dialog aria-labelledby="jdw-dashboard-dialog-title">
+          <div class="jdw-about__dialog-panel">
+            <div class="jdw-about__dialog-heading">
+              <div>
+                <p class="jdw-about__eyebrow">Shinylive · webR</p>
+                <h2 id="jdw-dashboard-dialog-title">{{ $appTitle }}</h2>
+              </div>
+              <button type="button" class="jdw-about__dialog-close" data-dashboard-close aria-label="R 기반 대시보드 닫기">
+                닫기
+              </button>
+            </div>
+            <p class="jdw-about__frame-status" data-dashboard-frame-status aria-live="polite">
+              R 실행 환경을 불러오는 중입니다. 첫 실행에는 시간이 걸릴 수 있습니다.
+            </p>
+            <div
+              class="jdw-about__frame-host"
+              data-dashboard-frame-host
+              style="--jdw-app-height: {{ $appHeight }}px"
+            ></div>
+          </div>
+        </dialog>
+      {{ end }}
+    </section>
   </div>
 </div>
+
+{{ $dashboardScript := resources.Get "js/jdw-about-dashboard.js" | js.Build (dict "targetPath" "js/jdw-about-dashboard.js" "minify" hugo.IsProduction) | fingerprint }}
+<script
+  type="module"
+  src="{{ $dashboardScript.RelPermalink }}"
+  integrity="{{ $dashboardScript.Data.Integrity }}"
+></script>

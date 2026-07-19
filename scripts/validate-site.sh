@@ -38,6 +38,7 @@ required_outputs=(
   public/post/rstudio-1-rstudio-server/index.html
   public/post/2026-01-18-quarto-rendering-test/index.html
   public/apps/profile-widget/index.html
+  public/privacy/index.html
   public/sitemap.xml
   public/robots.txt
 )

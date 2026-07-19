@@ -22,6 +22,11 @@ if (!requireNamespace("shinylive", quietly = TRUE)) {
   )
 }
 
+if (dir.exists(output_dir)) {
+  message("Removing the previous generated Shinylive bundle: ", output_dir)
+  unlink(output_dir, recursive = TRUE, force = TRUE)
+}
+
 dir.create(dirname(output_dir), recursive = TRUE, showWarnings = FALSE)
 
 shinylive::export(

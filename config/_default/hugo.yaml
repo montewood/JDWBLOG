@@ -56,6 +56,17 @@ taxonomies:
   tag: tags
   category: categories
   publication_type: publication_types
+related:
+  includeNewer: true
+  threshold: 20
+  toLower: true
+  indices:
+    - name: tags
+      weight: 100
+    - name: categories
+      weight: 80
+    - name: date
+      weight: 10
 markup:
   _merge: deep
   highlight:

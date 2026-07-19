@@ -70,4 +70,10 @@ Thumbs.db
 /assets/jsconfig.json
 /test-results/
 /playwright-report/
+.env
+.env.*
+!.env.example
 *.Zone.Identifier
+
+# Local Netlify folder
+.netlify

@@ -5,7 +5,9 @@
     "dev": "hugo server --disableFastRender",
     "build": "hugo --gc --minify && pnpm run pagefind",
     "check": "bash scripts/validate-site.sh",
+    "check:netlify": "tsc -p tsconfig.netlify.json",
     "check:quarto": "bash scripts/check-quarto-drift.sh",
+    "check:unit": "node --experimental-strip-types --test tests/unit/*.test.mjs",
     "check:visual": "playwright test",
     "check:visual:update": "playwright test --update-snapshots",
     "pagefind": "pagefind --site public"
@@ -13,6 +15,8 @@
   "dependencies": {
     "@tailwindcss/cli": "^4.1.12",
     "@tailwindcss/typography": "^0.5.10",
+    "@upstash/redis": "1.38.0",
+    "echarts": "6.1.0",
     "pagefind": "^1.4.0",
     "preact": "^10.27.2",
     "tailwindcss": "^4.1.12"
@@ -22,6 +26,10 @@
   "description": "Academic CV starter template for Hugo Blox with Tailwind CSS v4",
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
-    "@playwright/test": "^1.61.1"
+    "@netlify/edge-functions": "3.0.8",
+    "@netlify/functions": "5.3.0",
+    "@playwright/test": "^1.61.1",
+    "@types/node": "22.20.1",
+    "typescript": "7.0.2"
   }
 }

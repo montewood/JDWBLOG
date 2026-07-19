@@ -1,6 +1,7 @@
 ---
 title: "[R] tidyr 패키지로 하는 데이터 피봇(pivot_longer / pivot_wider)"
 date: '2021-04-16'
+draft: true
 slug: pivot_with_tidyr
 categories:
   - R

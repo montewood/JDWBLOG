@@ -66,6 +66,12 @@
 
 # Study Notes section was retired; preserve old inbound links.
 [[redirects]]
+  from = "/api/dashboard-launch"
+  to = "/.netlify/functions/dashboard-launch"
+  status = 200
+  force = true
+
+[[redirects]]
   from = "/courses/*"
   to = "/"
   status = 301

@@ -5,7 +5,8 @@
 {{/* Legacy behavior: show the update date when a post was revised after publication. */}}
 {{ $updated := gt ($item.Lastmod.Sub $item.Date).Hours 24 }}
 {{ $displayDate := cond $updated $item.Lastmod $item.Date }}
-{{ $terms := $item.Params.categories | default $item.Params.tags }}
+{{ $categories := $item.GetTerms "categories" }}
+{{ $tags := $item.GetTerms "tags" }}
 
 <article class="jdw-post-list__item">
   <div class="jdw-post-list__body">
@@ -16,7 +17,16 @@
         {{ if $updated }}마지막 업데이트 {{ end }}{{ time.Format $dateFormat $displayDate }}
       </time>
       {{ with $item.ReadingTime }}<span>{{ . }}분 읽기</span>{{ end }}
-      {{ with $terms }}<span>{{ delimit . ", " }}</span>{{ end }}
+      {{ with $categories }}
+        <span class="jdw-post-list__terms" aria-label="카테고리">
+          {{ range . }}<a href="{{ .RelPermalink }}" class="is-category">{{ .LinkTitle }}</a>{{ end }}
+        </span>
+      {{ end }}
+      {{ with $tags }}
+        <span class="jdw-post-list__terms" aria-label="태그">
+          {{ range . }}<a href="{{ .RelPermalink }}" class="is-tag">#{{ .LinkTitle }}</a>{{ end }}
+        </span>
+      {{ end }}
     </div>
   </div>
 

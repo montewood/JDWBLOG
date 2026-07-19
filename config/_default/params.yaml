@@ -38,7 +38,7 @@ hugoblox:
   footer:
     style: minimal
     language_switcher: false
-    text: ""
+    text: "[개인정보 및 쿠키 안내](/privacy/)"
 
   copyright:
     notice: "© {year} JDW. This work is licensed under {license}"

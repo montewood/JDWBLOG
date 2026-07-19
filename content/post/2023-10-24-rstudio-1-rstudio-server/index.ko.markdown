@@ -174,7 +174,7 @@ print(str_ssh)
 #> https://af9e-105-199-235-17.ngrok-free.app # 출력 예시
 ```
 
-<img src="images/ngork_visit.png" width="100%" /><img src="images/rstudio-login.png" width="100%" />
+<img src="images/ngork_visit.png" alt="ngrok을 통해 RStudio Server에 접속하는 화면" width="100%" /><img src="images/rstudio-login.png" alt="RStudio Server 로그인 화면" width="100%" />
 
 <img src="images/rstudio-main.png" alt="" width="100%"/>
 

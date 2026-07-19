@@ -2,8 +2,13 @@ block: jdw-about
 id: about
 content:
   username: jdw
+  dashboard_title: About This Blog
+  data_url_template: "https://raw.githubusercontent.com/montewood/gh-action/refs/heads/main/output/GA-DATE_KEY.json"
+  default_days: 90
   app_url: /apps/profile-widget/
   app_title: JDW Blog visitor dashboard
+  app_button_label: 대시보드 실행
+  launch_endpoint: /api/dashboard-launch
   app_height: 500
 design:
   css_class: jdw-section

@@ -4,8 +4,14 @@ date: "2026-01-18"
 authors:
   - jdw
 categories:
+  - R
+  - Quarto
+tags:
   - Matplotlib
-  - Coordinates
+  - Plotly
+  - Leaflet
+summary: Quarto의 hugo-md 형식으로 R 시각화와 HTML widget을 Hugo 블로그에 게시하는 렌더링 테스트입니다.
+toc: true
 format: hugo-md
 ---
 

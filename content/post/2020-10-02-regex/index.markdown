@@ -9,104 +9,23 @@ tags:
   - 텍스트
   - 전처리
   - 정규표현식
-subtitle: ''
-summary: ''
+summary: 'R에서 정규표현식의 메타문자와 패턴을 활용해 텍스트 데이터를 찾고 변환하는 방법을 예제로 살펴봅니다.'
 authors: [jdw]
 lastmod: '2020-10-02T14:00:32+09:00'
 featured: no
+toc: true
 image:
   caption: ''
   focal_point: ''
   preview_only: yes
 projects: []
-output:
-  blogdown::html_page:
-    toc: TRUE
-    toc_depth: 3
 ---
 
 <script src="index_files/htmlwidgets/htmlwidgets.js"></script>
 <link href="index_files/str_view/str_view.css" rel="stylesheet" />
 <script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
 <script src="index_files/kePrint/kePrint.js"></script>
 <link href="index_files/lightable/lightable.css" rel="stylesheet" />
-<script src="index_files/kePrint/kePrint.js"></script>
-<link href="index_files/lightable/lightable.css" rel="stylesheet" />
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
-<script src="index_files/htmlwidgets/htmlwidgets.js"></script>
-<link href="index_files/str_view/str_view.css" rel="stylesheet" />
-<script src="index_files/str_view-binding/str_view.js"></script>
 
 ![](images/regular-expression.gif)
 

@@ -1,0 +1,139 @@
+{{ define "main" }}
+{{ $dateFormat := site.Params.hugoblox.locale.date_format | default "2006-01-02" }}
+{{ $updated := gt (.Lastmod.Sub .Date).Hours 24 }}
+{{ $displayDate := cond $updated .Lastmod .Date }}
+{{ $categories := .GetTerms "categories" }}
+{{ $tags := .GetTerms "tags" }}
+{{ $tocEnabled := .Params.toc | default true }}
+{{ $hasToc := and $tocEnabled .Fragments.Headings }}
+{{ $tocMarkup := .TableOfContents }}
+
+<div class="jdw-post-shell{{ if $hasToc }} has-toc{{ end }}">
+  <article class="jdw-post" data-pagefind-body>
+    <header class="jdw-post__header">
+      <h1 data-pagefind-meta="title">{{ .Title }}</h1>
+      {{ with .Params.subtitle }}
+        <p class="jdw-post__subtitle">{{ . | markdownify }}</p>
+      {{ end }}
+
+      <div class="jdw-post__meta">
+        <time datetime="{{ time.Format "2006-01-02" $displayDate }}">
+          {{ if $updated }}마지막 업데이트 {{ end }}{{ time.Format $dateFormat $displayDate }}
+        </time>
+        {{ with .Params.authors }}
+          <span aria-hidden="true">·</span>
+          <span class="jdw-post__authors">{{ partial "page_metadata_authors" $ }}</span>
+        {{ end }}
+        {{ if ne .Params.reading_time false }}
+          <span aria-hidden="true">·</span>
+          <span>{{ .ReadingTime }}분 읽기</span>
+        {{ end }}
+      </div>
+
+      {{ if or $categories $tags }}
+        <div class="jdw-post__taxonomy">
+          {{ with $categories }}
+            <div aria-label="카테고리">
+              <span class="jdw-post__taxonomy-label">카테고리</span>
+              {{ range . }}
+                <a href="{{ .RelPermalink }}" class="jdw-post__category">{{ .LinkTitle }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+          {{ with $tags }}
+            <div aria-label="태그">
+              <span class="jdw-post__taxonomy-label">태그</span>
+              {{ range . }}
+                <a href="{{ .RelPermalink }}" class="jdw-post__tag">#{{ .LinkTitle }}</a>
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </header>
+
+    {{ $featured := partial "functions/get_featured_image.html" . }}
+    {{ $imageParams := partial "functions/get_page_image_params.html" . }}
+    {{ if and $featured (not $imageParams.preview_only) }}
+      <figure class="jdw-post__featured">
+        {{ if and (reflect.IsImageResourceProcessable $featured) (ne $featured.MediaType.SubType "gif") }}
+          {{ $small := $featured.Fit "720x900 webp" }}
+          {{ $large := $featured.Fit "1200x1400 webp" }}
+          <img
+            src="{{ $small.RelPermalink }}"
+            srcset="{{ $small.RelPermalink }} {{ $small.Width }}w, {{ $large.RelPermalink }} {{ $large.Width }}w"
+            sizes="(max-width: 760px) 100vw, 760px"
+            width="{{ $small.Width }}"
+            height="{{ $small.Height }}"
+            alt="{{ $imageParams.alt_text | default .Title }}"
+            fetchpriority="high"
+            data-pagefind-meta="image[src]"
+          >
+        {{ else }}
+          <img
+            src="{{ $featured.RelPermalink }}"
+            alt="{{ $imageParams.alt_text | default .Title }}"
+            fetchpriority="high"
+            data-pagefind-meta="image[src]"
+          >
+        {{ end }}
+        {{ with $imageParams.caption }}
+          <figcaption>{{ . | markdownify }}</figcaption>
+        {{ end }}
+      </figure>
+    {{ end }}
+
+    {{ if $hasToc }}
+      <details class="jdw-post__toc-mobile">
+        <summary>목차</summary>
+        {{ replace $tocMarkup "id=\"TableOfContents\"" "id=\"TableOfContentsMobile\"" | safeHTML }}
+      </details>
+    {{ end }}
+
+    <div class="jdw-post__content prose prose-slate dark:prose-invert">
+      <span data-pagefind-filter="type" style="display:none;">post</span>
+      {{ with $categories }}
+        <span data-pagefind-filter="category" style="display:none;">{{ (index . 0).LinkTitle }}</span>
+      {{ end }}
+      {{ .Content }}
+    </div>
+
+    <footer class="jdw-post__footer">
+      <div class="jdw-post__share">
+        {{ partial "components/page_sharer" . }}
+      </div>
+
+      <div class="jdw-post__author">
+        {{ partial "page_author" . }}
+      </div>
+
+      {{ $related := where (site.RegularPages.Related .) "Section" "post" | first 3 }}
+      {{ with $related }}
+        <section class="jdw-post__related" aria-labelledby="jdw-related-title">
+          <h2 id="jdw-related-title">관련 글</h2>
+          <div class="jdw-post__related-grid">
+            {{ range . }}
+              <article>
+                <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <div>
+                  <time datetime="{{ time.Format "2006-01-02" .Date }}">{{ time.Format $dateFormat .Date }}</time>
+                  <span>{{ .ReadingTime }}분 읽기</span>
+                </div>
+              </article>
+            {{ end }}
+          </div>
+        </section>
+      {{ end }}
+    </footer>
+  </article>
+
+  {{ if $hasToc }}
+    <aside class="jdw-post__toc" aria-label="목차">
+      <div>
+        <p>목차</p>
+        {{ $tocMarkup }}
+      </div>
+    </aside>
+  {{ end }}
+</div>
+{{ end }}
