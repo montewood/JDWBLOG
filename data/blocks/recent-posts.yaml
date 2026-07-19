@@ -2,6 +2,7 @@ block: content-collection
 id: posts
 content:
   title: 최근 게시물
+  text: Recent Posts
   count: 3
   filters:
     folders:

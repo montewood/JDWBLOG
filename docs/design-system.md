@@ -79,6 +79,9 @@ page bundles, an optional featured image, `summary`, `date`, and
 
 `jdw-project-grid` is a responsive 3/2/1-column project grid. It uses the first
 entry in `links` as the card destination and falls back to the project page.
+Tag filter buttons (legacy `All / Series / Shiny`) are configured through
+`jdw.project_filters` in `config/_default/params.yaml` and filter cards
+client-side by front-matter tags.
 
 Both views are independent names rather than overrides of upstream `card` or
 `date-title-summary`, reducing upgrade risk.

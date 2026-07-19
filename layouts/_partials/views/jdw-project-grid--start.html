@@ -1,1 +1,10 @@
+{{ $filters := site.Params.jdw.project_filters | default slice }}
+{{ if $filters }}
+<nav class="jdw-project-filters" aria-label="프로젝트 필터">
+  <button type="button" class="is-active" data-filter="*">All</button>
+  {{ range $filters }}
+    <button type="button" data-filter="{{ . }}">{{ . }}</button>
+  {{ end }}
+</nav>
+{{ end }}
 <div class="jdw-project-grid">

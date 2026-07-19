@@ -62,12 +62,12 @@
 
       {{ with $profile.education }}
         <section>
-          <h2>학력</h2>
+          <h2>학위</h2>
           <ul class="jdw-about__education">
             {{ range . }}
               <li>
-                <strong>{{ .degree }}</strong>
-                <span>{{ .institution }}{{ with .end }} · {{ time.Format "2006" . }}{{ end }}</span>
+                <strong>{{ .degree }}{{ with .end }}, {{ time.Format "2006" . }}{{ end }}</strong>
+                <span>{{ .institution }}</span>
               </li>
             {{ end }}
           </ul>

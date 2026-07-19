@@ -110,3 +110,9 @@ hugoblox:
 
   pro:
     hide_attribution: false
+
+# JDW design system settings (project-owned, outside the hugoblox schema)
+jdw:
+  project_filters:
+    - Series
+    - Shiny

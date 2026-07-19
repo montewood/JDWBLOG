@@ -87,8 +87,9 @@
 }
 
 .jdw-about__facts h2 {
-  margin: 0 0 0.8rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.9rem;
+  font-size: clamp(1.3rem, 1.8vw, 1.5rem);
+  font-weight: 800;
 }
 
 .jdw-about__facts ul {

@@ -11,7 +11,7 @@
   {{ end }}
 {{ end }}
 
-<article class="jdw-project-card">
+<article class="jdw-project-card" data-tags="{{ delimit ($item.Params.tags | default slice) "," }}">
   <a class="jdw-project-card__link" href="{{ $link }}" {{ if $external }}target="_blank" rel="noopener"{{ end }}>
     <div class="jdw-project-card__media">
       {{ with $image }}
