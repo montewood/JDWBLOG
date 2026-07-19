@@ -5,6 +5,7 @@
  */
 
 :root {
+  color-scheme: light;
   --jdw-primary: #1565c0;
   --jdw-primary-active: #2962ff;
   --jdw-section: #ffffff;
@@ -17,10 +18,10 @@
   --jdw-article: 47.5rem;
   --jdw-docs: 67.5rem;
   --jdw-section-space: clamp(3.75rem, 7vw, 6.875rem);
-  color-scheme: light dark;
 }
 
 .dark {
+  color-scheme: dark;
   --jdw-primary: #90caf9;
   --jdw-primary-active: #bbdefb;
   --jdw-section: #23252f;
@@ -66,6 +67,12 @@ samp {
 .navbar,
 .navbar-brand {
   font-family: var(--hb-font-nav);
+}
+
+/* Match the legacy 70px navbar and keep it flush with the viewport top. */
+#site-header.header {
+  padding-block: 0.5rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--jdw-text) 10%, transparent);
 }
 
 .navbar-brand {

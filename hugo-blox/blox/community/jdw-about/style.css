@@ -118,11 +118,6 @@
 
 .jdw-about__app {
   margin-top: 2.25rem;
-  overflow: hidden;
-  border: 1px solid rgb(148 163 184 / 25%);
-  border-radius: 0.35rem;
-  background: #ffffff;
-  box-shadow: 0 0.45rem 1.5rem rgb(15 23 42 / 8%);
 }
 
 .jdw-about__app iframe {
