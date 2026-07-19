@@ -38,7 +38,7 @@ hugoblox:
   footer:
     style: minimal
     language_switcher: false
-    text: "데이터와 소프트웨어를 기록합니다."
+    text: ""
 
   copyright:
     notice: "© {year} {name}. This work is licensed under {license}"

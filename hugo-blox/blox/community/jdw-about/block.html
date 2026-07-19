@@ -50,10 +50,6 @@
   </aside>
 
   <div class="jdw-about__details">
-    {{ with $profile.bio }}
-      <div class="jdw-about__bio">{{ . | $page.RenderString }}</div>
-    {{ end }}
-
     <div class="jdw-about__facts">
       {{ with $profile.interests }}
         <section>

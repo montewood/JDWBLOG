@@ -8,5 +8,4 @@ sections:
   - ref: about
   - ref: recent-posts
   - ref: projects
-  - ref: study-notes
 ---
