@@ -79,7 +79,7 @@ hugoblox:
 
   analytics:
     google:
-      measurement_id: ""
+      measurement_id: "G-HQEFG3D86B"
     google_tag_manager:
       container_id: "GTM-P8STCFM"
 
