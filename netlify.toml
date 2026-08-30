@@ -76,6 +76,22 @@
   to = "/"
   status = 301
 
+# These project entries were unpublished; preserve old inbound links.
+[[redirects]]
+  from = "/project/producex/"
+  to = "/project/"
+  status = 301
+
+[[redirects]]
+  from = "/project/deepnote/"
+  to = "/project/"
+  status = 301
+
+[[redirects]]
+  from = "/project/rolling-in-the-kaggle/"
+  to = "/project/"
+  status = 301
+
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"
   [plugins.inputs]

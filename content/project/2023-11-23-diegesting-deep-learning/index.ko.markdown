@@ -16,4 +16,6 @@ image:
   focal_point: ''
   preview_only: yes
 projects: []
+# Retired: its /courses/ target went away with the Study Notes section.
+draft: true
 ---
