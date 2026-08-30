@@ -68,4 +68,10 @@ jobs:
             }
           '
           python -m pip install numpy matplotlib ipyleaflet
-      - run: scripts/check-quarto-drift.sh
+      - name: Run scripts/check-quarto-drift.sh
+        # Left alone, reticulate provisions its own uv-managed interpreter and
+        # resolves only numpy from the chunk, so the .qmd dies on matplotlib.
+        # Pin it to the interpreter the step above actually installed into.
+        env:
+          RETICULATE_PYTHON: ${{ env.pythonLocation }}/bin/python
+        run: scripts/check-quarto-drift.sh
