@@ -113,6 +113,5 @@ hugoblox:
 
 # JDW design system settings (project-owned, outside the hugoblox schema)
 jdw:
-  project_filters:
-    - Series
-    - Shiny
+  # An empty list hides the filter bar entirely; only one published project remains.
+  project_filters: []

@@ -19,4 +19,6 @@ image:
   focal_point: ''
   preview_only: yes
 projects: []
+# Retired: the montewood/ProduceX101 GitHub Pages target no longer exists.
+draft: true
 ---
