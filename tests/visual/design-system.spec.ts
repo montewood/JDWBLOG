@@ -47,7 +47,6 @@ const routes = [
   { name: 'home', path: '/' },
   { name: 'posts', path: '/post/' },
   { name: 'post-regex', path: '/post/regex/' },
-  { name: 'post-quarto', path: '/post/2026-01-18-quarto-rendering-test/' },
   { name: 'post-rstudio', path: '/post/rstudio-1-rstudio-server/' },
   { name: 'projects', path: '/project/' },
   { name: 'privacy', path: '/privacy/' },

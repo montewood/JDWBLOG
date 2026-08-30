@@ -135,7 +135,7 @@ links:
 ## Visual acceptance matrix
 
 The required routes include `/`, `/post/`, `/post/regex/`,
-`/post/2026-01-18-quarto-rendering-test/`, `/project/`, `/privacy/`, and
+`/post/rstudio-1-rstudio-server/`, `/project/`, `/privacy/`, and
 `/apps/profile-widget/`.
 
 Each route is checked at 390×844, 768×1024, and 1440×1200 in light and dark

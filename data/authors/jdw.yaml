@@ -9,11 +9,6 @@ role: Data Analyst & MLOps Engineer
 bio: |
   R과 Python을 활용한 데이터 분석, 클라우드 엔지니어링,
   딥러닝과 데이터 제품을 공부하고 기록합니다.
-affiliations:
-  - name: INTERX
-    url: https://interxlab.com/
-  - name: UNIST
-    url: https://www.unist.ac.kr/
 links:
   - icon: at-symbol
     url: mailto:jdwnovember@gmail.com

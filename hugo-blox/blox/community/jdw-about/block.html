@@ -71,8 +71,8 @@
           <ul class="jdw-about__education">
             {{ range . }}
               <li>
-                <strong>{{ .degree }}{{ with .end }}, {{ time.Format "2006" . }}{{ end }}</strong>
-                <span>{{ .institution }}</span>
+                <span class="jdw-about__degree">{{ .degree }}{{ with .end }}, {{ time.Format "2006" . }}{{ end }}</span>
+                <span class="jdw-about__institution">{{ .institution }}</span>
               </li>
             {{ end }}
           </ul>

@@ -122,7 +122,7 @@
   gap: 0.1rem;
 }
 
-.jdw-about__education span {
+.jdw-about__education .jdw-about__institution {
   color: color-mix(in srgb, var(--jdw-text) 65%, transparent);
   font-size: 0.9rem;
 }
