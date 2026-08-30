@@ -52,10 +52,14 @@ jobs:
         with:
           python-version: "3.12"
       - name: Install rendering dependencies
-        # install.packages only warns on failure, so assert afterwards instead
-        # of letting a missing package surface later as a render error.
+        # The repo .Rprofile pins repos to source-only CRAN and R reads it after
+        # setup-r, so without this every package compiles and fails on missing
+        # headers. install.packages only warns on failure, so assert afterwards
+        # instead of letting a missing package surface later as a render error.
         run: |
           Rscript -e '
+            rspm <- Sys.getenv("RSPM")
+            if (nzchar(rspm)) options(repos = c(RSPM = rspm))
             pkgs <- c("rmarkdown", "gapminder", "ggplot2", "plotly", "leaflet", "reticulate")
             install.packages(pkgs)
             missing <- pkgs[!pkgs %in% rownames(installed.packages())]
