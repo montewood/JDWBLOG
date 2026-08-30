@@ -57,6 +57,9 @@ jobs:
             pnpm run check:visual:update
           fi
       - name: Commit updated snapshots
+        # Without this a single unrelated assertion failure discards every
+        # baseline the run already regenerated.
+        if: ${{ !cancelled() }}
         run: |
           if git diff --quiet -- tests/visual; then
             echo "Snapshots are already up to date."

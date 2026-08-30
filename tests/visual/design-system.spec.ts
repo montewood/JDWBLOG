@@ -188,19 +188,21 @@ test('homepage defers Shinylive until the dashboard button is clicked', async ({
 
 test('post metadata is generated from Hugo and linked taxonomies', async ({ page }) => {
   await page.goto('/', { waitUntil: 'networkidle' });
-  const quartoPost = page.locator('.jdw-post-list__item', {
-    has: page.getByRole('link', { name: 'Hello, Quarto' }),
+  const post = page.locator('.jdw-post-list__item', {
+    has: page.locator('a[href="/post/rstudio-1-rstudio-server/"]'),
   });
 
-  await expect(quartoPost.locator('time')).toHaveText('2026-01-18');
-  await expect(quartoPost.locator('.jdw-post-list__meta')).toContainText('1분 읽기');
-  await expect(quartoPost.getByRole('link', { name: 'Quarto', exact: true })).toHaveAttribute(
+  // Production sets HUGO_ENABLEGITINFO, so its Lastmod comes from the commit
+  // date. Here enableGitInfo stays off and the front matter date is rendered.
+  await expect(post.locator('time')).toHaveAttribute('datetime', '2023-10-24');
+  await expect(post.locator('.jdw-post-list__meta')).toContainText('4분 읽기');
+  await expect(post.getByRole('link', { name: 'Colab', exact: true })).toHaveAttribute(
     'href',
-    '/categories/quarto/',
+    '/categories/colab/',
   );
-  await expect(quartoPost.getByRole('link', { name: '#Matplotlib' })).toHaveAttribute(
+  await expect(post.getByRole('link', { name: '#Rstudio' })).toHaveAttribute(
     'href',
-    '/tags/matplotlib/',
+    '/tags/rstudio/',
   );
 });
 
